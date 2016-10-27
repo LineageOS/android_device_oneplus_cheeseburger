@@ -81,6 +81,9 @@ on post-fs
     chown system log /sys/fs/pstore/console-ramoops-0
     chmod 0440 /sys/fs/pstore/console-ramoops-0
 
+    start qseecomd
+    exec - root root root -- /system/bin/init.qcom.qseecomd.sh
+
     # Initialize IPA for rmnet
     write /dev/ipa 1
 
