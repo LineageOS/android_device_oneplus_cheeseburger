@@ -33,3 +33,5 @@
 /system/bin/ifaadaemon                                          u:object_r:ifaadaemon_exec:s0
 
 /system/bin/remosaic_daemon                                     u:object_r:remosaic_daemon_exec:s0
+
+/system/bin/init.qti.qseecomd.sh                                u:object_r:init-qti-fbe-sh_exec:s0
