@@ -211,8 +211,11 @@ TARGET_RIL_VARIANT := caf
 PROTOBUF_SUPPORTED := true
 
 # SELinux
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
+
+# FIXME
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
