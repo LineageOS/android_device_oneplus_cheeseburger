@@ -41,4 +41,4 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # inherit from the proprietary version
--include vendor/oneplus/cheeseburger/BoardConfigVendor.mk
+include vendor/oneplus/cheeseburger/BoardConfigVendor.mk
