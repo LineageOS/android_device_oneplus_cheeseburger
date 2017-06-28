@@ -87,6 +87,18 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_PACKAGES += \
     power.msm8998
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.msm.usb.configfs.rc \
+    init.qcom.rc \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.target.rc \
+    ueventd.qcom.rc
+
 # TWRP
 ifeq ($(RECOVERY_VARIANT),twrp)
 PRODUCT_COPY_FILES += \
