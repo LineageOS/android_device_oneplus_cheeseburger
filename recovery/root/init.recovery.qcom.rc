@@ -1,0 +1,12 @@
+on boot
+    # Enable sched boost
+    write /proc/sys/kernel/sched_boost 1
+
+on init
+    chmod 0660 /dev/qseecom
+    chown system drmrpc /dev/qseecom
+    chmod 0664 /dev/ion
+    chown system system /dev/ion
+
+    # Turn on button backlight
+    write /sys/class/leds/button-backlight/brightness 1

@@ -102,7 +102,8 @@ PRODUCT_PACKAGES += \
 # TWRP
 ifeq ($(RECOVERY_VARIANT),twrp)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+    $(LOCAL_PATH)/recovery/root/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc \
+    $(LOCAL_PATH)/recovery/root/twrp.fstab:recovery/root/etc/twrp.fstab
 endif
 
 # Inherit from oppo-common
