@@ -266,8 +266,19 @@ vendor/lib/hw/sound_trigger.primary.msm8998.so
 vendor/lib/libsmwrapper.so
 
 # Media
+-vendor/lib/libgpustats.so
+-vendor/lib64/libgpustats.so
+lib64/libOmxVpp.so
+lib64/libvpplibrary.so
 lib/libOmxVpp.so
 lib/libvpplibrary.so
+vendor/lib64/libI420colorconvert.so
+vendor/lib64/libOmxAacDec.so
+vendor/lib64/libOmxEvrcDec.so
+vendor/lib64/libOmxQcelp13Dec.so
+vendor/lib64/libmm-color-convertor.so
+vendor/lib64/libmmosal.so
+vendor/lib64/libvpphvx.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal.so
@@ -285,6 +296,9 @@ vendor/lib64/libQtiTether.so
 # Perf
 bin/energy-awareness
 bin/msm_irqbalance
+
+# QCOM post_boot
+etc/init.qcom.post_boot.sh
 
 # Peripheral manager
 bin/pm-proxy
@@ -341,7 +355,6 @@ vendor/lib64/libsmemlog.so
 -app/embms/embms.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
 -app/shutdownlistener/shutdownlistener.apk
-bin/ipacm-diag
 bin/netmgrd
 bin/radish
 bin/rmt_storage
@@ -355,7 +368,7 @@ etc/permissions/telephonyservice.xml
 framework/embmslibrary.jar
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
-framework/qti-telephony-common.jar|3cea332c3cc179fae5691763c8e55027cc76ffc8
+framework/qti-telephony-common.jar
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
@@ -364,6 +377,8 @@ vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
+vendor/lib64/libpdmapper.so
+vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-qmi-1.so
@@ -412,17 +427,25 @@ vendor/lib64/libvoice-svc.so
 
 # Sensors
 bin/sensors.qcom
+etc/sensors/hals.conf
+etc/sensors/sensor_def_qcomdev.conf
 vendor/lib/hw/activity_recognition.msm8998.so
+vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
+vendor/lib/libsensor_test.so
 vendor/lib/libsensor_thresh.so
 vendor/lib/libsensor_user_cal.so
 vendor/lib/libsensor1.so
+vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/hw/activity_recognition.msm8998.so
+vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
+vendor/lib64/libsensor_test.so
 vendor/lib64/libsensor_thresh.so
 vendor/lib64/libsensor_user_cal.so
 vendor/lib64/libsensor1.so
+vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 
 # Thermal
@@ -440,11 +463,16 @@ vendor/lib/libTimeService.so
 -vendor/lib64/libtime_genoff.so
 vendor/lib64/libTimeService.so
 
+# Voice fingerprint
+bin/qvop-daemon
+vendor/lib64/libqvop-service.so
+vendor/lib/libqvop-service.so
+
 # Widevine
 vendor/lib/libwvdrm_L3.so
 vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
-# Wifi
+# Wi-Fi
 bin/cnss_diag
 bin/cnss-daemon

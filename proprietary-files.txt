@@ -9,6 +9,8 @@ etc/acdbdata/MTP/MTP_Handset_cal.acdb
 etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
 bin/mm-qcamera-daemon
@@ -199,6 +201,7 @@ lib/libopcameralib.so
 lib/libSensorManagerHAL.so
 
 # Camera / DSP - Hexagon libraries
+lib/rfsa/adsp/libVDHexagonBlurless_skel.so
 lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
 lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so
 
@@ -275,6 +278,15 @@ etc/firmware/a540_zap.b02
 etc/firmware/a540_zap.elf
 etc/firmware/a540_zap.mdt
 
+# IPA
+bin/ipacm-diag
+etc/firmware/ipa_fws.b00
+etc/firmware/ipa_fws.b01
+etc/firmware/ipa_fws.b02
+etc/firmware/ipa_fws.b03
+etc/firmware/ipa_fws.b04
+etc/firmware/ipa_fws.mdt
+
 # NFC firmware
 vendor/firmware/libpn553_fw.so
 
@@ -287,3 +299,6 @@ etc/firmware/mbn_ota/mbn_ota.txt
 # Sensors
 etc/sensors/hals.conf
 etc/sensors/sensor_def_qcomdev.conf
+
+# Wi-Fi
+lib/modules/qca_cld3/qca_cld3_wlan.ko
