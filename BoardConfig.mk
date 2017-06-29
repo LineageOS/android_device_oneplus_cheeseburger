@@ -33,7 +33,7 @@ BOARD_VENDOR := oneplus
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := OnePlus5,oneplus5,cheeseburger
+TARGET_OTA_ASSERT_DEVICE := cheeseburger
 
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
@@ -51,13 +51,13 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := kryo
+TARGET_CPU_VARIANT := generic
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := kryo
+TARGET_2ND_CPU_VARIANT := cortex-a9
 
 ENABLE_CPUSETS := true
 
@@ -83,6 +83,15 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+
+# Init
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
+
+# Keystore
+TARGET_PROVIDES_KEYMASTER := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := f2fs
@@ -94,6 +103,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab
+TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
