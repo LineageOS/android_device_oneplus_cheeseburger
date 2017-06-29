@@ -90,10 +90,10 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.msm.usb.configfs.rc \
+    init.qcom.power.rc \
     init.qcom.rc \
-    init.qcom.sensors.sh \
     init.qcom.sh \
+    init.qcom.usb.configfs.rc \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.target.rc \
