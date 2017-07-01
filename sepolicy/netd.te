@@ -1,0 +1,2 @@
+r_dir_file(netd, firmware_file)
+allow netd vfat:file r_file_perms;
