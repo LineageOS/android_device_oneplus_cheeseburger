@@ -225,16 +225,16 @@ PRODUCT_PACKAGES += \
     libjson
 
 # Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.qcom.power.rc \
-    init.qcom.rc \
-    init.qcom.sh \
-    init.qcom.usb.configfs.rc \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.target.rc \
-    ueventd.qcom.rc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/init.qcom.power.rc:root/init.qcom.power.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.sh:root/init.qcom.sh \
+    $(LOCAL_PATH)/rootdir/init.qcom.usb.configfs.rc:root/init.qcom.usb.configfs.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.usb.sh:root/init.qcom.usb.sh \
+    $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
+    $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc
 
 # RIL
 PRODUCT_PACKAGES += \
