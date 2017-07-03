@@ -82,7 +82,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Dalvik/HWUI
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
 
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -160,6 +160,25 @@ PRODUCT_PACKAGES += \
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
     fs_config_files
+
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8998 \
+    gps.conf \
+    libgps.utils \
+    libloc_core \
+    libloc_eng \
+    libloc_pla \
+    libloc_stub \
+    libcurl \
+    libgnsspps
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/etc/flp.conf:system/vendor/etc/flp.conf \
+    $(LOCAL_PATH)/gps/etc/izat.conf:system/vendor/etc/izat.conf \
+    $(LOCAL_PATH)/gps/etc/lowi.conf:system/vendor/etc/lowi.conf \
+    $(LOCAL_PATH)/gps/etc/sap.conf:system/vendor/etc/sap.conf \
+    $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/vendor/etc/xtwifi.conf
 
 # IPv6
 PRODUCT_PACKAGES += \
@@ -263,6 +282,10 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.msm8998
+
+# Vehicle network (for slim_daemon)
+PRODUCT_PACKAGES += \
+    libvehiclenetwork-native
 
 # TWRP
 ifeq ($(RECOVERY_VARIANT),twrp)

@@ -42,7 +42,7 @@ LOCAL_CFLAGS += \
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
     $(TARGET_OUT_HEADERS)/libloc_core \
-    hardware/qcom/gps/loc_api/libloc_api_50001 \
+    $(call project-path-for,qcom-gps) \
     $(TARGET_OUT_HEADERS)/libflp \
     $(TARGET_OUT_HEADERS)/libloc_pla
 
