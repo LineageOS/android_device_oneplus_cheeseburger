@@ -11,6 +11,10 @@ vendor/etc/perf-profile6.conf
 vendor/lib/libqti-iop-client.so
 vendor/lib/libqti-iop.so
 vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti-util.so
+vendor/lib/libqti-utils.so
 vendor/lib64/libqti-iop-client.so
 vendor/lib64/libqti-iop.so
 vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti-util.so
+vendor/lib64/libqti-utils.so
