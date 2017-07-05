@@ -138,6 +138,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Configpanel
+PRODUCT_PACKAGES += \
+    ConfigPanel
+
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     cneapiclient \
