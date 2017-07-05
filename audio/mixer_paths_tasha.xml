@@ -662,10 +662,13 @@
 
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="deep-buffer-playback quat_i2s">
+    <path name="deep-buffer-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 <!--#endif-->
+    <path name="deep-buffer-playback receiver">
+        <path name="deep-buffer-playback speaker" />
+    </path>
 
     <path name="deep-buffer-playback speaker-protected">
         <path name="deep-buffer-playback" />
@@ -681,12 +684,12 @@
 
     <path name="deep-buffer-playback speaker-and-hdmi">
         <path name="deep-buffer-playback hdmi" />
-        <path name="deep-buffer-playback" />
+        <path name="deep-buffer-playback speaker" />
     </path>
 
     <path name="deep-buffer-playback speaker-and-display-port">
         <path name="deep-buffer-playback display-port" />
-        <path name="deep-buffer-playback" />
+        <path name="deep-buffer-playback speaker" />
     </path>
 
     <path name="deep-buffer-playback bt-sco">
@@ -712,7 +715,7 @@
 
     <path name="deep-buffer-playback speaker-and-usb-headphones">
         <path name="deep-buffer-playback usb-headphones" />
-        <path name="deep-buffer-playback" />
+        <path name="deep-buffer-playback speaker" />
     </path>
 
     <path name="deep-buffer-playback headphones">
@@ -729,10 +732,13 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="low-latency-playback quat_i2s">
+    <path name="low-latency-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 <!--#endif-->
+    <path name="low-latency-playback receiver">
+        <path name="low-latency-playback speaker" />
+    </path>
 
     <path name="low-latency-playback speaker-protected">
         <path name="low-latency-playback" />
@@ -757,12 +763,12 @@
 
     <path name="low-latency-playback speaker-and-hdmi">
         <path name="low-latency-playback hdmi" />
-        <path name="low-latency-playback" />
+        <path name="low-latency-playback speaker" />
     </path>
 
     <path name="low-latency-playback speaker-and-display-port">
         <path name="low-latency-playback display-port" />
-        <path name="low-latency-playback" />
+        <path name="low-latency-playback speaker" />
     </path>
 
     <path name="low-latency-playback afe-proxy">
@@ -779,7 +785,7 @@
 
     <path name="low-latency-playback speaker-and-usb-headphones">
         <path name="low-latency-playback usb-headphones" />
-        <path name="low-latency-playback" />
+        <path name="low-latency-playback speaker" />
     </path>
 
     <path name="low-latency-playback headphones">
@@ -796,10 +802,14 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="audio-ull-playback quat_i2s">
+    <path name="audio-ull-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
     </path>
 <!--#endif-->
+    <path name="audio-ull-playback receiver">
+        <path name="audio-ull-playback speaker" />
+    </path>
+
     <path name="audio-ull-playback speaker-protected">
         <path name="audio-ull-playback" />
     </path>
@@ -809,7 +819,7 @@
     </path>
 
     <path name="audio-ull-playback speaker-and-headphones">
-        <path name="audio-ull-playback" />
+        <path name="audio-ull-playback speaker" />
         <path name="audio-ull-playback headphones" />
     </path>
 
@@ -832,12 +842,12 @@
 
     <path name="audio-ull-playback speaker-and-hdmi">
         <path name="audio-ull-playback hdmi" />
-        <path name="audio-ull-playback" />
+        <path name="audio-ull-playback speaker" />
     </path>
 
     <path name="audio-ull-playback speaker-and-display-port">
         <path name="audio-ull-playback display-port" />
-        <path name="audio-ull-playback" />
+        <path name="audio-ull-playback speaker" />
     </path>
 
     <path name="audio-ull-playback afe-proxy">
@@ -869,10 +879,14 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="compress-offload-playback quat_i2s">
+    <path name="compress-offload-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback receiver">
+        <path name="compress-offload-playback speaker" />
+    </path>
+
     <path name="compress-offload-playback speaker-protected">
         <path name="compress-offload-playback" />
     </path>
@@ -904,12 +918,12 @@
 
     <path name="compress-offload-playback speaker-and-hdmi">
         <path name="compress-offload-playback hdmi" />
-        <path name="compress-offload-playback" />
+        <path name="compress-offload-playback speaker" />
     </path>
 
     <path name="compress-offload-playback speaker-and-display-port">
         <path name="compress-offload-playback display-port" />
-        <path name="compress-offload-playback" />
+        <path name="compress-offload-playback speaker" />
     </path>
 
     <path name="compress-offload-playback afe-proxy">
@@ -926,7 +940,7 @@
 
     <path name="compress-offload-playback speaker-and-usb-headphones">
         <path name="compress-offload-playback usb-headphones" />
-        <path name="compress-offload-playback" />
+        <path name="compress-offload-playback speaker" />
     </path>
 
     <path name="compress-offload-playback headphones">
@@ -939,7 +953,7 @@
 
     <path name="compress-offload-playback speaker-and-headphones">
         <path name="compress-offload-playback headphones" />
-        <path name="compress-offload-playback" />
+        <path name="compress-offload-playback speaker" />
     </path>
 
     <path name="compress-offload-playback2">
@@ -947,10 +961,13 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="compress-offload-playback2 quat_i2s">
+    <path name="compress-offload-playback2 speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia7" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback2 receiver">
+        <path name="compress-offload-playback2 speaker" />
+    </path>
 
     <path name="compress-offload-playback2 hdmi">
         <ctl name="HDMI Mixer MultiMedia7" value="1" />
@@ -971,12 +988,12 @@
 
     <path name="compress-offload-playback2 speaker-and-hdmi">
         <path name="compress-offload-playback2 hdmi" />
-        <path name="compress-offload-playback2" />
+        <path name="compress-offload-playback2 speaker" />
     </path>
 
     <path name="compress-offload-playback2 speaker-and-display-port">
         <path name="compress-offload-playback2 display-port" />
-        <path name="compress-offload-playback2" />
+        <path name="compress-offload-playback2 speaker" />
     </path>
 
     <path name="compress-offload-playback2 afe-proxy">
@@ -993,7 +1010,7 @@
 
     <path name="compress-offload-playback2 speaker-and-usb-headphones">
         <path name="compress-offload-playback2 usb-headphones" />
-        <path name="compress-offload-playback2" />
+        <path name="compress-offload-playback2 speaker" />
     </path>
 
     <path name="compress-offload-playback2 headphones">
@@ -1014,10 +1031,14 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="compress-offload-playback3 quat_i2s">
+    <path name="compress-offload-playback3 speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback3 receiver">
+        <path name="compress-offload-playback3 speaker" />
+    </path>
+
     <path name="compress-offload-playback3 hdmi">
         <ctl name="HDMI Mixer MultiMedia10" value="1" />
     </path>
@@ -1037,12 +1058,12 @@
 
     <path name="compress-offload-playback3 speaker-and-hdmi">
         <path name="compress-offload-playback3 hdmi" />
-        <path name="compress-offload-playback3" />
+        <path name="compress-offload-playback3 speaker" />
     </path>
 
     <path name="compress-offload-playback3 speaker-and-display-port">
         <path name="compress-offload-playback3 display-port" />
-        <path name="compress-offload-playback3" />
+        <path name="compress-offload-playback3 speaker" />
     </path>
 
     <path name="compress-offload-playback3 afe-proxy">
@@ -1059,7 +1080,7 @@
 
     <path name="compress-offload-playback3 speaker-and-usb-headphones">
         <path name="compress-offload-playback3 usb-headphones" />
-        <path name="compress-offload-playback3" />
+        <path name="compress-offload-playback3 speaker" />
     </path>
 
     <path name="compress-offload-playback3 headphones">
@@ -1072,7 +1093,7 @@
 
     <path name="compress-offload-playback3 speaker-and-headphones">
         <path name="compress-offload-playback3 headphones" />
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+        <path name="compress-offload-playback3 speaker" />
     </path>
 
     <path name="compress-offload-playback4">
@@ -1080,10 +1101,13 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->	
-    <path name="compress-offload-playback4 quat_i2s">
+    <path name="compress-offload-playback4 speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia11" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback4 receiver">
+        <path name="compress-offload-playback4 speaker" />
+    </path>
 
     <path name="compress-offload-playback4 hdmi">
         <ctl name="HDMI Mixer MultiMedia11" value="1" />
@@ -1104,12 +1128,12 @@
 
     <path name="compress-offload-playback4 speaker-and-hdmi">
         <path name="compress-offload-playback4 hdmi" />
-        <path name="compress-offload-playback4" />
+        <path name="compress-offload-playback4 speaker" />
     </path>
 
     <path name="compress-offload-playback4 speaker-and-display-port">
         <path name="compress-offload-playback4 display-port" />
-        <path name="compress-offload-playback4" />
+        <path name="compress-offload-playback4 speaker" />
     </path>
 
 
@@ -1127,7 +1151,7 @@
 
     <path name="compress-offload-playback4 speaker-and-usb-headphones">
         <path name="compress-offload-playback4 usb-headphones" />
-        <path name="compress-offload-playback4" />
+        <path name="compress-offload-playback4 speaker" />
     </path>
 
     <path name="compress-offload-playback4 headphones">
@@ -1140,7 +1164,7 @@
 
     <path name="compress-offload-playback4 speaker-and-headphones">
         <path name="compress-offload-playback4 headphones" />
-         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia11" value="1" />
+        <path name="compress-offload-playback4 speaker" />
     </path>
 
     <path name="compress-offload-playback5">
@@ -1148,10 +1172,14 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-	<path name="compress-offload-playback5 quat_i2s">
+    <path name="compress-offload-playback5 speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback5 receiver">
+        <path name="compress-offload-playback5 speaker" />
+    </path>
+
     <path name="compress-offload-playback5 hdmi">
         <ctl name="HDMI Mixer MultiMedia12" value="1" />
     </path>
@@ -1171,12 +1199,12 @@
 
     <path name="compress-offload-playback5 speaker-and-hdmi">
         <path name="compress-offload-playback5 hdmi" />
-        <path name="compress-offload-playback5" />
+        <path name="compress-offload-playback5 speaker" />
     </path>
 
     <path name="compress-offload-playback5 speaker-and-display-port">
         <path name="compress-offload-playback5 display-port" />
-        <path name="compress-offload-playback5" />
+        <path name="compress-offload-playback5 speaker" />
     </path>
 
     <path name="compress-offload-playback5 afe-proxy">
@@ -1193,7 +1221,7 @@
 
     <path name="compress-offload-playback5 speaker-and-usb-headphones">
         <path name="compress-offload-playback5 usb-headphones" />
-        <path name="compress-offload-playback5" />
+        <path name="compress-offload-playback5 speaker" />
     </path>
 
     <path name="compress-offload-playback5 headphones">
@@ -1206,7 +1234,7 @@
 
     <path name="compress-offload-playback5 speaker-and-headphones">
         <path name="compress-offload-playback5 headphones" />
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia12" value="1" />
+        <path name="compress-offload-playback5 speaker" />
     </path>
 
     <path name="compress-offload-playback6">
@@ -1214,10 +1242,14 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->	
-    <path name="compress-offload-playback6 quat_i2s">
+    <path name="compress-offload-playback6 speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia13" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback6 receiver">
+        <path name="compress-offload-playback6 speaker" />
+    </path>
+
     <path name="compress-offload-playback6 hdmi">
         <ctl name="HDMI Mixer MultiMedia13" value="1" />
     </path>
@@ -1237,12 +1269,12 @@
 
     <path name="compress-offload-playback6 speaker-and-hdmi">
         <path name="compress-offload-playback6 hdmi" />
-        <path name="compress-offload-playback6" />
+        <path name="compress-offload-playback6 speaker" />
     </path>
 
     <path name="compress-offload-playback6 speaker-and-display-port">
         <path name="compress-offload-playback6 display-port" />
-        <path name="compress-offload-playback6" />
+        <path name="compress-offload-playback6 speaker" />
     </path>
 
     <path name="compress-offload-playback6 afe-proxy">
@@ -1259,7 +1291,7 @@
 
     <path name="compress-offload-playback6 speaker-and-usb-headphones">
         <path name="compress-offload-playback6 usb-headphones" />
-        <path name="compress-offload-playback6" />
+        <path name="compress-offload-playback6 speaker" />
     </path>
 
     <path name="compress-offload-playback6 headphones">
@@ -1272,7 +1304,7 @@
 
     <path name="compress-offload-playback6 speaker-and-headphones">
         <path name="compress-offload-playback6 headphones" />
-         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia13" value="1" />
+        <path name="compress-offload-playback6 speaker" />
     </path>
 
     <path name="compress-offload-playback7">
@@ -1280,10 +1312,14 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="compress-offload-playback7 quat_i2s">
+    <path name="compress-offload-playback7 speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia14" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback7 receiver">
+        <path name="compress-offload-playback7 speaker" />
+    </path>
+
     <path name="compress-offload-playback7 hdmi">
         <ctl name="HDMI Mixer MultiMedia14" value="1" />
     </path>
@@ -1303,12 +1339,12 @@
 
     <path name="compress-offload-playback7 speaker-and-hdmi">
         <path name="compress-offload-playback7 hdmi" />
-        <path name="compress-offload-playback7" />
+        <path name="compress-offload-playback7 speaker" />
     </path>
 
     <path name="compress-offload-playback7 speaker-and-display-port">
         <path name="compress-offload-playback7 display-port" />
-        <path name="compress-offload-playback7" />
+        <path name="compress-offload-playback7 speaker" />
     </path>
 
     <path name="compress-offload-playback7 afe-proxy">
@@ -1325,7 +1361,7 @@
 
     <path name="compress-offload-playback7 speaker-and-usb-headphones">
         <path name="compress-offload-playback7 usb-headphones" />
-        <path name="compress-offload-playback7" />
+        <path name="compress-offload-playback7 speaker" />
     </path>
 
     <path name="compress-offload-playback7 headphones">
@@ -1338,7 +1374,7 @@
 
     <path name="compress-offload-playback7 speaker-and-headphones">
         <path name="compress-offload-playback7 headphones" />
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia14" value="1" />
+        <path name="compress-offload-playback7 speaker" />
     </path>
 
     <path name="compress-offload-playback8">
@@ -1346,10 +1382,14 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->	
-    <path name="compress-offload-playback8 quat_i2s">
+    <path name="compress-offload-playback8 speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia15" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback8 receiver">
+        <path name="compress-offload-playback8 speaker" />
+    </path>
+
     <path name="compress-offload-playback8 hdmi">
         <ctl name="HDMI Mixer MultiMedia15" value="1" />
     </path>
@@ -1369,12 +1409,12 @@
 
     <path name="compress-offload-playback8 speaker-and-hdmi">
         <path name="compress-offload-playback8 hdmi" />
-        <path name="compress-offload-playback8" />
+        <path name="compress-offload-playback8 speaker" />
     </path>
 
     <path name="compress-offload-playback8 speaker-and-display-port">
         <path name="compress-offload-playback8 display-port" />
-        <path name="compress-offload-playback8" />
+        <path name="compress-offload-playback8 speaker" />
     </path>
 
     <path name="compress-offload-playback8 afe-proxy">
@@ -1391,7 +1431,7 @@
 
     <path name="compress-offload-playback8 speaker-and-usb-headphones">
         <path name="compress-offload-playback8 usb-headphones" />
-        <path name="compress-offload-playback8" />
+        <path name="compress-offload-playback8 speaker" />
     </path>
 
     <path name="compress-offload-playback8 headphones">
@@ -1404,7 +1444,7 @@
 
     <path name="compress-offload-playback8 speaker-and-headphones">
         <path name="compress-offload-playback8 headphones" />
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia15" value="1" />
+        <path name="compress-offload-playback8 speaker" />
     </path>
 
     <path name="compress-offload-playback9">
@@ -1412,10 +1452,14 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="compress-offload-playback9 quat_i2s">
+    <path name="compress-offload-playback9 speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia16" value="1" />
     </path>
 <!--#endif-->
+    <path name="compress-offload-playback9 receiver">
+        <path name="compress-offload-playback9 speaker" />
+    </path>
+
     <path name="compress-offload-playback9 hdmi">
         <ctl name="HDMI Mixer MultiMedia16" value="1" />
     </path>
@@ -1435,12 +1479,12 @@
 
     <path name="compress-offload-playback9 speaker-and-hdmi">
         <path name="compress-offload-playback9 hdmi" />
-        <path name="compress-offload-playback9" />
+        <path name="compress-offload-playback9 speaker" />
     </path>
 
     <path name="compress-offload-playback9 speaker-and-display-port">
         <path name="compress-offload-playback9 display-port" />
-        <path name="compress-offload-playback9" />
+        <path name="compress-offload-playback9 speaker" />
     </path>
 
     <path name="compress-offload-playback9 afe-proxy">
@@ -1457,7 +1501,7 @@
 
     <path name="compress-offload-playback9 speaker-and-usb-headphones">
         <path name="compress-offload-playback9 usb-headphones" />
-        <path name="compress-offload-playback9" />
+        <path name="compress-offload-playback9 speaker" />
     </path>
 
     <path name="compress-offload-playback9 headphones">
@@ -1470,7 +1514,7 @@
 
     <path name="compress-offload-playback9 speaker-and-headphones">
         <path name="compress-offload-playback9 headphones" />
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia16" value="1" />
+        <path name="compress-offload-playback9 speaker" />
     </path>
 
     <path name="audio-record">
@@ -1701,11 +1745,17 @@
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
 
-    <path name="compress-voip-call quat_i2s">
+    <path name="compress-voip-call speaker">
         <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
         <ctl name="QUAT_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
+
+    <path name="compress-voip-call receiver">
+        <ctl name="QUAT_MI2S_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
+    </path>
+
     <path name="compress-voip-call headphones">
         <ctl name="SLIM_6_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
@@ -1757,11 +1807,14 @@
         <ctl name="VoWLAN_Tx Mixer SLIM_0_TX_VoWLAN" value="1" />
     </path>
 
-    <path name="vowlan-call quat_i2s">
-        <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
-        <ctl name="QUAT_MI2S_RX_Voice Mixer VoWLAN" value="1" />
-        <ctl name="VoWLAN_Tx Mixer SLIM_0_TX_VoWLAN" value="1" />
+    <path name="vowlan-call speaker">
+        <path name="vowlan-call"/>
     </path>
+
+    <path name="vowlan-call receiver">
+        <path name="vowlan-call"/>
+    </path>
+
     <path name="vowlan-call headphones">
         <ctl name="SLIM_6_RX_Voice Mixer VoWLAN" value="1" />
         <ctl name="VoWLAN_Tx Mixer SLIM_0_TX_VoWLAN" value="1" />
@@ -1813,12 +1866,17 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
-    <path name="voicemmode1-call quat_i2s">
+    <path name="voicemmode1-call speaker">
         <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
         <ctl name="QUAT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
     </path>
 <!--#endif-->
+    <path name="voicemmode1-call receiver">
+        <ctl name="QUAT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
+    </path>
+
     <path name="voicemmode1-call headphones">
         <ctl name="SLIM_6_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
@@ -1870,12 +1928,17 @@
     </path>
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->	
-    <path name="voicemmode2-call quat_i2s">
+    <path name="voicemmode2-call speaker">
         <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
         <ctl name="QUAT_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
     </path>
 <!--#endif-->
+    <path name="voicemmode2-call receiver">
+        <ctl name="QUAT_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
+        <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
+    </path>
+
     <path name="voicemmode2-call headphones">
         <ctl name="SLIM_6_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
@@ -2956,61 +3019,61 @@
 
     <path name="deep-buffer-playback speaker-and-bt-a2dp">
         <path name="deep-buffer-playback bt-a2dp" />
-        <path name="deep-buffer-playback quat_i2s" />
+        <path name="deep-buffer-playback speaker" />
     </path>
 
     <path name="compress-offload-playback speaker-and-bt-a2dp">
         <path name="compress-offload-playback bt-a2dp" />
-        <path name="compress-offload-playback quat_i2s" />
+        <path name="compress-offload-playback speaker" />
     </path>
 
     <path name="low-latency-playback speaker-and-bt-a2dp">
         <path name="low-latency-playback bt-a2dp" />
-        <path name="low-latency-playback quat_i2s" />
+        <path name="low-latency-playback speaker" />
     </path>
 
     <path name="compress-offload-playback2 speaker-and-bt-a2dp">
         <path name="compress-offload-playback2 bt-a2dp" />
-        <path name="compress-offload-playback2 quat_i2s" />
+        <path name="compress-offload-playback2 speaker" />
     </path>
 
     <path name="compress-offload-playback3 speaker-and-bt-a2dp">
         <path name="compress-offload-playback3 bt-a2dp" />
-        <path name="compress-offload-playback3 quat_i2s" />
+        <path name="compress-offload-playback3 speaker" />
     </path>
 
     <path name="compress-offload-playback4 speaker-and-bt-a2dp">
         <path name="compress-offload-playback4 bt-a2dp" />
-        <path name="compress-offload-playback4 quat_i2s" />
+        <path name="compress-offload-playback4 speaker" />
     </path>
 
     <path name="compress-offload-playback5 speaker-and-bt-a2dp">
         <path name="compress-offload-playback5 bt-a2dp" />
-        <path name="compress-offload-playback5 quat_i2s" />
+        <path name="compress-offload-playback5 speaker" />
     </path>
 
     <path name="compress-offload-playback6 speaker-and-bt-a2dp">
         <path name="compress-offload-playback6 bt-a2dp" />
-        <path name="compress-offload-playback6 quat_i2s" />
+        <path name="compress-offload-playback6 speaker" />
     </path>
 
     <path name="compress-offload-playback7 speaker-and-bt-a2dp">
         <path name="compress-offload-playback7 bt-a2dp" />
-        <path name="compress-offload-playback7 quat_i2s" />
+        <path name="compress-offload-playback7 speaker" />
     </path>
 
     <path name="compress-offload-playback8 speaker-and-bt-a2dp">
         <path name="compress-offload-playback8 bt-a2dp" />
-        <path name="compress-offload-playback8 quat_i2s" />
+        <path name="compress-offload-playback8 speaker" />
     </path>
 
     <path name="compress-offload-playback9 speaker-and-bt-a2dp">
         <path name="compress-offload-playback9 bt-a2dp" />
-        <path name="compress-offload-playback9 quat_i2s" />
+        <path name="compress-offload-playback9 speaker" />
     </path>
 
     <path name="audio-ull-playback speaker-and-bt-a2dp">
         <path name="audio-ull-playback bt-a2dp" />
-        <path name="audio-ull-playback quat_i2s" />
+        <path name="audio-ull-playback speaker" />
     </path>
 </mixer>
