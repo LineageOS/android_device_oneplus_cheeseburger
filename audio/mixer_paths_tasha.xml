@@ -723,8 +723,8 @@
     </path>
 
     <path name="deep-buffer-playback speaker-and-headphones">
-       <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia1" value="1" />
-       <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <path name="deep-buffer-playback headphones" />
+        <path name="deep-buffer-playback speaker" />
     </path>
 
     <path name="low-latency-playback">
@@ -793,8 +793,8 @@
     </path>
 
     <path name="low-latency-playback speaker-and-headphones">
-        <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia5" value="1" />
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+        <path name="low-latency-playback headphones" />
+        <path name="low-latency-playback speaker" />
     </path>
 
     <path name="audio-ull-playback">
@@ -1022,8 +1022,8 @@
     </path>
 
     <path name="compress-offload-playback2 speaker-and-headphones">
-        <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia7" value="1" />
-	<ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia7" value="1" />
+        <path name="compress-offload-playback2 headphones" />
+        <path name="compress-offload-playback2 speaker" />
     </path>
 
     <path name="compress-offload-playback3">
