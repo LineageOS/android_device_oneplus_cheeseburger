@@ -32,16 +32,22 @@ import org.mokee.internal.util.FileUtils;
 public class KeyDisabler {
 
     private static String CONTROL_PATH = "/proc/touchpanel/key_disable";
+    private static String FPC_PATH = "/sys/module/fpc1020_tee/parameters/ignor_home_for_ESD";
 
     public static boolean isSupported() {
-        return FileUtils.isFileWritable(CONTROL_PATH);
+        return FileUtils.isFileWritable(CONTROL_PATH) &&
+                FileUtils.isFileWritable(FPC_PATH);
     }
 
     public static boolean isActive() {
-        return FileUtils.readOneLine(CONTROL_PATH).equals("1");
+        return FileUtils.readOneLine(CONTROL_PATH).equals("1") ||
+                FileUtils.readOneLine(FPC_PATH).equals("1");
     }
 
     public static boolean setActive(boolean state) {
-        return FileUtils.writeLine(CONTROL_PATH, (state ? "1" : "0"));
+        String value = state ? "1" : "0";
+        boolean control = FileUtils.writeLine(CONTROL_PATH, value);
+        boolean fpc =  FileUtils.writeLine(FPC_PATH, value);
+        return control && fpc;
     }
 }

@@ -155,6 +155,8 @@ on boot
     chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/hw_reset
     chown system system /sys/devices/soc/soc:fpc_fpc1020/hw_reset
 
+    chmod 0666 /sys/module/fpc1020_tee/parameters/ignor_home_for_ESD
+
     # NFC
     chmod 0666 /dev/pn544
     chown nfc nfc /dev/pn544
