@@ -41,6 +41,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:7.1.1/NMF26X/06241119:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=XiNGRZ
+    ro.mk.maintainer=cheeseburger-dev
 
 TARGET_VENDOR := oneplus
