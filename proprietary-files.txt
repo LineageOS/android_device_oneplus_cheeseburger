@@ -315,6 +315,3 @@ etc/firmware/mbn_ota/mbn_ota.txt
 # Sensors
 etc/sensors/hals.conf
 etc/sensors/sensor_def_qcomdev.conf
-
-# Wi-Fi
-lib/modules/qca_cld3/qca_cld3_wlan.ko
