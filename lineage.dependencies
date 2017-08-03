@@ -8,10 +8,6 @@
     "target_path": "kernel/oneplus/msm8998"
   },
   {
-    "repository": "android_vendor_oneplus_cheeseburger",
-    "target_path": "vendor/oneplus/cheeseburger"
-  },
-  {
     "repository": "android_vendor_nxp-nfc_opensource_frameworks",
     "target_path": "vendor/nxp-nfc/opensource/frameworks"
   },
