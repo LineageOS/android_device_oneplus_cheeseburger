@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cbca547c_df41eeeb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 15450
+      },
+      "writtenOn": "2017-08-03T15:43:50Z",
+      "side": 1,
+      "message": "cheeseburger: dependencies:",
+      "revId": "6d564f5f66550a347360cdf26fa129bb7ecf81a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
