@@ -23,8 +23,8 @@
 # definition file).
 #
 
-# Inherit from oppo-common
--include device/oppo/common/BoardConfigCommon.mk
+# Inherit from oneplus-common
+-include device/oneplus/common/BoardConfigCommon.mk
 
 PLATFORM_PATH := device/oneplus/cheeseburger
 
