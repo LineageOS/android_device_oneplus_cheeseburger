@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4103dc2c_edd6af45",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 8328
+      },
+      "writtenOn": "2017-08-04T15:55:57Z",
+      "side": 1,
+      "message": "i would remove it here then as well",
+      "range": {
+        "startLine": 212,
+        "startChar": 0,
+        "endLine": 212,
+        "endChar": 34
+      },
+      "revId": "fa3020386f9ae59aa07a5dddc35802782b4ce960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
