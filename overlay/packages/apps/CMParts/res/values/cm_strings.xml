@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="live_display_color_profile_dcip3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dcip3_summary">Colors accurate to the DCI-P3 color space</string>
+</resources>
