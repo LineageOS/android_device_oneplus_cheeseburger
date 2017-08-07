@@ -8,4 +8,5 @@ allow cameraserver self:process { execmem };
 
 allow cameraserver shell_exec:file { r_file_perms };
 
+allow cameraserver adsprpcd_file:dir { getattr search };
 allow cameraserver adsprpcd_file:file { r_file_perms };

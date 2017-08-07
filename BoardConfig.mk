@@ -214,9 +214,6 @@ PROTOBUF_SUPPORTED := true
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
-# FIXME
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
