@@ -1,0 +1,5 @@
+ifaadaemon                                                       u:object_r:ifaadaemon_service:s0
+sms-sec                                                          u:object_r:sms_secure_service:s0
+com.fingerprints.extension.sensortest.IFingerprintSensorTest     u:object_r:fingerprintd_service:s0
+com.fingerprints.extension.navigation.IFingerprintNavigation     u:object_r:fingerprintd_service:s0
+com.fingerprints.extension.engineering.IFingerprintEngineering   u:object_r:fingerprintd_service:s0

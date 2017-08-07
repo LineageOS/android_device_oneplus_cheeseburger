@@ -1,0 +1,2 @@
+allow init dash_device:chr_file { getattr };
+domain_trans(init, rootfs, dashd)

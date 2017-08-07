@@ -1,1 +1,33 @@
+# executables
+/system/bin/ifaadaemon                                          u:object_r:ifaadaemon_exec:s0
 /system/bin/init.qti.qseecomd.sh                                u:object_r:init-qti-fbe-sh_exec:s0
+
+# We have a couple of non-standard NV partitions
+/dev/block/bootdevice/by-name/oem_dycnvbk                       u:object_r:modem_efs_partition_device:s0
+/dev/block/bootdevice/by-name/oem_stanvbk                       u:object_r:modem_efs_partition_device:s0
+
+# FRP partition
+/dev/block/bootdevice/by-name/config                            u:object_r:frp_block_device:s0
+
+# Persist partition
+/dev/block/bootdevice/by-name/persist                           u:object_r:persist_block_device:s0
+
+# dev
+/dev/dash                                                       u:object_r:dash_device:s0
+
+# data
+/data/misc/netmgr(/.*)?                                         u:object_r:net_data_file:s0
+/data/oemnvitems(/.*)?                                          u:object_r:nv_data_file:s0
+
+# sys
+/sys/devices/soc/soc:fpc_fpc1020/irq                            u:object_r:sysfs_fpc_irq:s0
+/sys/devices/soc/soc:fpc_fpc1020/screen_state                   u:object_r:sysfs_fpc_screen:s0
+
+/sys/devices/soc/.*ssusb/power_supply/usb(/.*)?                 u:object_r:sysfs_usb_supply:s0
+
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/usb(/.*)?    u:object_r:sysfs_usb_supply:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/battery(/.*)?    u:object_r:sysfs_battery_supply:s0
+/sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/power_supply/bms(/.*)?    u:object_r:sysfs_battery_supply:s0
+
+/sys/kernel/debug/msm_core(/.*)?                                u:object_r:debugfs_msm_core:s0
+/sys/kernel/debug/rmt_storage/rmts                              u:object_r:debugfs_rmts:s0

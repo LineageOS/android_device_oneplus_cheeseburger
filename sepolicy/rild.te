@@ -1,0 +1,2 @@
+allow rild nv_data_file:dir { getattr };
+allow rild nv_data_file:file { rw_file_perms };

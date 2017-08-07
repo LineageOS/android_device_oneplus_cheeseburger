@@ -1,0 +1,11 @@
+allow qti_init_shell configfs:file {
+    write
+    open
+};
+
+allow qti_init_shell kmsg_device:chr_file {
+    write
+    open
+};
+
+qmux_socket(qti_init_shell)

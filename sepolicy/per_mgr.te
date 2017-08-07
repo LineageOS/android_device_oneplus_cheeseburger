@@ -1,0 +1,4 @@
+allow per_mgr self:capability {
+    dac_override
+    net_raw 
+};

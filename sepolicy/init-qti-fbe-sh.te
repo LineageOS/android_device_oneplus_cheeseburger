@@ -30,7 +30,7 @@ type init-qti-fbe-sh_exec, exec_type, file_type;
 
 init_daemon_domain(init-qti-fbe-sh)
 
-allow init-qti-fbe-sh shell_exec:file rx_file_perms;
+allow init-qti-fbe-sh shell_exec:file { rx_file_perms };
 
 # execute toybox/toolbox
-allow init-qti-fbe-sh toolbox_exec:file rx_file_perms;
+allow init-qti-fbe-sh toolbox_exec:file { rx_file_perms };
