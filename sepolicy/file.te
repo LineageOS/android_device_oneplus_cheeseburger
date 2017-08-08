@@ -3,6 +3,7 @@ type proc_touchpanel, fs_type;
 
 type nv_data_file, file_type;
 
+type sysfs_fpc_home, sysfs_type, fs_type;
 type sysfs_fpc_irq, sysfs_type, fs_type;
 type sysfs_fpc_screen, sysfs_type, fs_type;
 

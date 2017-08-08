@@ -31,3 +31,5 @@
 
 /sys/kernel/debug/msm_core(/.*)?                                u:object_r:debugfs_msm_core:s0
 /sys/kernel/debug/rmt_storage/rmts                              u:object_r:debugfs_rmts:s0
+
+/sys/module/fpc1020_tee/parameters/ignor_home_for_ESD           u:object_r:sysfs_fpc_home:s0
