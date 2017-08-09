@@ -198,6 +198,10 @@ on boot
     chmod 660 /sys/class/leds/green/duty_pcts
     chmod 660 /sys/class/leds/blue/duty_pcts
 
+    # Touchpanel
+    chown system system /proc/touchpanel/key_disable
+    chown system system /sys/module/fpc1020_tee/parameters/ignor_home_for_ESD
+
     # Vibrator
     chown system system /sys/class/timed_output/vibrator/vmax
     chown system system /sys/class/timed_output/vibrator/wf_s0
