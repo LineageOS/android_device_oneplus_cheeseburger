@@ -10,7 +10,6 @@
 /dev/block/bootdevice/by-name/recovery                       /recovery         emmc    defaults                                                                                                        defaults
 /dev/block/bootdevice/by-name/system                         /system           ext4    ro,barrier=1,discard                                                                                            wait
 /dev/block/bootdevice/by-name/userdata                       /data             ext4    nosuid,nodev,noatime,barrier=1,noauto_da_alloc                                                                  wait,check,fileencryption=ice,resize
-/dev/block/bootdevice/by-name/userdata                       /data             f2fs    nosuid,nodev,noatime,inline_xattr,data_flush                                                                    wait,check,fileencryption=ice,resize
 /dev/block/bootdevice/by-name/cache                          /cache            ext4    nosuid,nodev,noatime,barrier=1                                                                                  wait,check,formattable
 /dev/block/bootdevice/by-name/cache                          /cache            f2fs    nosuid,nodev,noatime,inline_xattr,data_flush,flush_merge                                                        wait,check,formattable
 /dev/block/bootdevice/by-name/persist                        /persist          ext4    nosuid,nodev,barrier=1                                                                                          wait
