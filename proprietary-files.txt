@@ -33,10 +33,13 @@ lib/libqomx_core.so
 lib/libVDBlurlessAPI.so
 lib/libVDHDRAPI.so
 vendor/lib/libarcsoft_dualcam_refocus.so
+vendor/lib/libblurbuster.so
 vendor/lib/libcamera_bokeh_wrapper.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libchromaflash.so
 vendor/lib/libcvface_api.so
+vendor/lib/libdualcameraddm.so
+vendor/lib/libfiltergenerator.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libfusionLibrary.so
 vendor/lib/libjpegdhw.so
@@ -116,10 +119,37 @@ vendor/lib/libSonyIMX371RmscLibrary.so
 vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 vendor/lib64/libcdsprpc.so
+vendor/lib64/libchromaflash.so
+vendor/lib64/liboptizoom.so
+vendor/lib64/libseemore.so
+vendor/lib64/libblurbuster.so
 
 # Camera actuators
 vendor/lib/libactuator_lc898217xc_imx350.so
 vendor/lib/libactuator_lc898217xc_imx398.so
+
+# Camera app modules
+vendor/lib/libjni_optizoom.so
+vendor/lib/libjni_trackingfocus.so
+vendor/lib/libjni_chromaflash.so
+vendor/lib/libjni_makeupV2.so
+vendor/lib/libjni_panorama.so
+vendor/lib/libjni_ubifocus.so
+vendor/lib/libjni_blurbuster.so
+vendor/lib/libjni_dualcamera.so
+vendor/lib/libjni_filtergenerator.so
+vendor/lib/libjni_stillmore.so
+vendor/lib/libjni_sharpshooter.so
+vendor/lib64/libjni_optizoom.so
+vendor/lib64/libjni_trackingfocus.so
+vendor/lib64/libjni_chromaflash.so
+vendor/lib64/libjni_makeupV2.so
+vendor/lib64/libjni_panorama.so
+vendor/lib64/libjni_ubifocus.so
+vendor/lib64/libjni_blurbuster.so
+vendor/lib64/libjni_stillmore.so
+vendor/lib64/libjni_clearsight.so
+vendor/lib64/libjni_sharpshooter.so
 
 # Camera chromatix
 vendor/lib/libchromatix_imx350_3a_1536x866_30fps_video.so
