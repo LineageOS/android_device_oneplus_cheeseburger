@@ -21,6 +21,7 @@
 
 # sys
 /sys/devices/soc/soc:fpc_fpc1020/irq                            u:object_r:sysfs_fpc_irq:s0
+/sys/devices/soc/soc:fpc_fpc1020/report_home                    u:object_r:sysfs_fpc_home:s0
 /sys/devices/soc/soc:fpc_fpc1020/screen_state                   u:object_r:sysfs_fpc_screen:s0
 
 /sys/devices/soc/.*ssusb/power_supply/usb(/.*)?                 u:object_r:sysfs_usb_supply:s0
