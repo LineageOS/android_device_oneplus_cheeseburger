@@ -8,7 +8,7 @@ af.fast_track_multiplier=2
 audio_hal.period_size=192
 ro.qc.sdk.audio.fluencetype=fluencepro
 persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=true
+persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
 tunnel.audio.encode=false
 persist.audio.ras.enabled=false
@@ -37,7 +37,6 @@ qcom.hw.aac.encoder=true
 fm.a2dp.conc.disabled=true
 audio.noisy.broadcast.delay=600
 audio.adm.buffering.ms=3
-audio.offload.min.duration.secs=30
 persist.dirac.acs.controller=qem
 
 # Battery
