@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "133010ab_c76a1cbb",
+        "filename": "system.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-08-13T17:27:54Z",
+      "side": 1,
+      "message": "ew rome that oem comment",
+      "revId": "4f44674f85faa877a4af25e2ba3c3bdec5492910",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
