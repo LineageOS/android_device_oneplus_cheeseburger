@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "67d0652a_270fbe9c",
+        "filename": "configs/powerhint_soc_id_292.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2017-08-15T11:12:12Z",
+      "side": 1,
+      "message": "I\u0027m afraid these values are not supported with UM.5.7 perfd stack(diff with 5.7 xml and you know why)",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 88,
+        "endChar": 82
+      },
+      "revId": "d1a59e37495b0c8912dfe41a644dbd071fdb4c71",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
