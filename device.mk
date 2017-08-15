@@ -151,6 +151,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    OneplusDoze
+
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     fingerprintd
