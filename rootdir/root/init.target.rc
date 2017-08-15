@@ -183,6 +183,7 @@ on boot
     chown system system /sys/class/leds/red/blink
     chown system system /sys/class/leds/blue/blink
     chown system system /sys/class/leds/green/blink
+    chown system system /sys/class/leds/rgb/rgb_blink
 
     chown system system /sys/class/leds/red/ramp_step_ms
     chown system system /sys/class/leds/blue/ramp_step_ms
@@ -197,6 +198,7 @@ on boot
     chmod 660 /sys/class/leds/red/duty_pcts
     chmod 660 /sys/class/leds/green/duty_pcts
     chmod 660 /sys/class/leds/blue/duty_pcts
+    chmod 660 /sys/class/leds/rgb/rgb_blink
 
     # Touchpanel
     chown system system /proc/touchpanel/key_disable
