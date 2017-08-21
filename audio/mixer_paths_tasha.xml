@@ -570,7 +570,7 @@
     <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia3" value="0" />
     <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia7" value="0" />
-    <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia8" value="0" />
+    <!--<ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia8" value="0" /> -->
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia10" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia11" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia12" value="0" />
@@ -2033,7 +2033,7 @@
     </path>
 
     <path name="speaker">
-        <ctl name="COMP7 Switch" value="1" />
+     <!--   <ctl name="COMP7 Switch" value="1" />
         <ctl name="COMP8 Switch" value="1" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
@@ -2047,18 +2047,18 @@
         <ctl name="SpkrLeft VISENSE Switch" value="1" />
         <ctl name="SpkrRight VISENSE Switch" value="1" />
         <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
-        <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
+        <ctl name="SpkrRight SWR DAC_Port Switch" value="1" /> -->
     </path>
 
     <path name="speaker-fluid">
-        <ctl name="COMP7 Switch" value="1" />
+      <!--  <ctl name="COMP7 Switch" value="1" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
         <ctl name="SpkrLeft COMP Switch" value="1" />
         <ctl name="SpkrLeft BOOST Switch" value="1" />
         <ctl name="SpkrLeft VISENSE Switch" value="1" />
-        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
+        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" /> -->
     </path>
 
     <path name="speaker-mono">
