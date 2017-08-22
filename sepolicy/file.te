@@ -9,3 +9,5 @@ type sysfs_fpc_screen, sysfs_type, fs_type;
 
 type debugfs_msm_core, debugfs_type, fs_type;
 type debugfs_rmts, debugfs_type, fs_type;
+
+type sysfs_fpc_proximity, sysfs_type, fs_type;
