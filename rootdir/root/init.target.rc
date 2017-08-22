@@ -220,6 +220,32 @@ on boot
     # Touchpanel
     chown system system /proc/touchpanel/key_disable
     chown system system /sys/module/fpc1020_tee/parameters/ignor_home_for_ESD
+    chown root system /proc/touchpanel/double_swipe_enable
+    chmod 0660 /proc/touchpanel/double_swipe_enable
+    chown root system /proc/touchpanel/down_arrow_enable
+    chmod 0660 /proc/touchpanel/down_arrow_enable
+    chown root system /proc/touchpanel/down_swipe_enable
+    chmod 0660 /proc/touchpanel/down_swipe_enable
+    chown root system /proc/touchpanel/left_arrow_enable
+    chmod 0660 /proc/touchpanel/left_arrow_enable
+    chown root system /proc/touchpanel/left_swipe_enable
+    chmod 0660 /proc/touchpanel/left_swipe_enable
+    chown root system /proc/touchpanel/letter_m_enable
+    chmod 0660 /proc/touchpanel/letter_m_enable
+    chown root system /proc/touchpanel/letter_o_enable
+    chmod 0660 /proc/touchpanel/letter_o_enable
+    chown root system /proc/touchpanel/letter_s_enable
+    chmod 0660 /proc/touchpanel/letter_s_enable
+    chown root system /proc/touchpanel/letter_w_enable
+    chmod 0660 /proc/touchpanel/letter_w_enable
+    chown root system /proc/touchpanel/right_arrow_enable
+    chmod 0660 /proc/touchpanel/right_arrow_enable
+    chown root system /proc/touchpanel/right_swipe_enable
+    chmod 0660 /proc/touchpanel/right_swipe_enable
+    chown root system /proc/touchpanel/up_arrow_enable
+    chmod 0660 /proc/touchpanel/up_arrow_enable
+    chown root system /proc/touchpanel/up_swipe_enable
+    chmod 0660 /proc/touchpanel/up_swipe_enable
 
     # Vibrator
     chown system system /sys/class/timed_output/vibrator/vmax
