@@ -30,12 +30,12 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>4</item>
+        <item>20</item>
         <item>45</item>
         <item>1025</item>
         <item>1480</item>
-        <item>2940</item>
+        <item>2250</item>
+        <item>3300</item>
         <item>10000</item>
     </integer-array>
 
@@ -44,13 +44,13 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>3</item>
-        <item>7</item>
-        <item>11</item>
-        <item>26</item>
-        <item>60</item>
-        <item>108</item>
-        <item>175</item>
+        <item>6</item>
+        <item>10</item>
+        <item>20</item>
+        <item>46</item>
+        <item>78</item>
+        <item>128</item>
+        <item>220</item>
         <item>255</item>
     </integer-array>
 
@@ -67,7 +67,7 @@
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">2</integer>
+    <integer name="config_screenBrightnessSettingMinimum">1</integer>
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
@@ -84,20 +84,18 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>25</item>
         <item>10</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>25</item>
-        <item>8</item>
+        <item>10</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>25</item>
+        <item>10</item>
     </integer-array>
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
@@ -191,7 +189,7 @@
         <item>mobile_ims,11,0,2,60000,true</item>
         <item>mobile_cbs,12,0,2,60000,true</item>
         <item>bluetooth,7,7,2,-1,true</item>
-        <item>ethernet,9,9,9,-1,true</item>
+        <item>mobile_emergency,15,0,5,-1,true</item>
     </string-array>
 
     <!-- This string array should be overridden by the device to present a list of radio
@@ -218,6 +216,8 @@
          should be empty.  An example would be "softap.*" -->
     <string-array translatable="false" name="config_tether_wifi_regexs">
         <item>"wlan0"</item>
+        <item>"wigig0"</item>
+        <item>"softap0"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
@@ -234,7 +234,6 @@
     <integer-array translatable="false" name="config_tether_upstream_types">
         <item>0</item>
         <item>1</item>
-        <item>4</item>
         <item>5</item>
         <item>7</item>
     </integer-array>
@@ -428,7 +427,7 @@
          thrashing if set too low.  Overrides the default value chosen by ActivityManager
          based on screen size and total memory for the largest lowmemorykiller bucket, and
          scaled proportionally to the smaller buckets.  -1 keeps the default. -->
-    <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">409600</integer>
+    <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">-1</integer>
 
     <!-- Device configuration setting the /proc/sys/vm/extra_free_kbytes tunable in the kernel
          (if it exists).  A high value will increase the amount of memory that the kernel
@@ -437,7 +436,7 @@
          allocations to block waiting on disk I/O or lowmemorykiller.  Overrides the default
          value chosen by ActivityManager based on screen size.  0 prevents keeping any extra
          memory over what the kernel keeps by default.  -1 keeps the default. -->
-    <integer name="config_extraFreeKbytesAbsolute">40960</integer>
+    <integer name="config_extraFreeKbytesAbsolute">-1</integer>
 
     <!-- If enabled, capacitive keys will only light up when pressed.
          Otherwise, the buttons will light up whenever the user interacts with the device -->
