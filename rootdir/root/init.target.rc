@@ -160,6 +160,8 @@ on boot
     chown system system /sys/devices/soc/soc:fpc_fpc1020/sensor_version
     chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/hw_reset
     chown system system /sys/devices/soc/soc:fpc_fpc1020/hw_reset
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/proximity_state
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/proximity_state
 
     # NFC
     chmod 0666 /dev/pn544
