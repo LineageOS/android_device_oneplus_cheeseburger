@@ -280,6 +280,7 @@ service seempd /system/bin/seempd
     user system
     group system
     socket seempdw dgram 0666 system system
+    disabled
 
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
