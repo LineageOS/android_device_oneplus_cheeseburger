@@ -408,6 +408,11 @@ service qdmastatsd /system/bin/qdmastatsd
     user system
     group system
 
+service kernel_loggy /system/bin/sh /kernel_loggy.sh
+    class main
+    user root
+    oneshot
+
 on property:sys.srgb=1
    write /sys/devices/virtual/graphics/fb0/SRGB 1
 
