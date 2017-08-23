@@ -1070,6 +1070,7 @@ service seemp_healthd /system/vendor/bin/seemp_healthd
     class late_start
     user system
     group system
+    disabled
 
 on charger
     setprop persist.sys.usb.config charging
