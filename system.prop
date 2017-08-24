@@ -173,6 +173,9 @@ ro.qti.sensors.mot_detect=true
 ro.qti.sensors.dpc=true
 ro.qti.sensors.multishake=true
 
+# Storage
+ro.sys.sdcardfs=true
+
 # Timeservice
 persist.timed.enable=true
 
