@@ -38,6 +38,7 @@ vendor/lib/libcamera_bokeh_wrapper.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libchromaflash.so
 vendor/lib/libcvface_api.so
+vendor/lib/libdczoom.so
 vendor/lib/libdualcameraddm.so
 vendor/lib/libfiltergenerator.so
 vendor/lib/libflash_pmic.so
