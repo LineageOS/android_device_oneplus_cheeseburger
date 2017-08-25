@@ -293,6 +293,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.uicc.sh:system/etc/init.qcom.uicc.sh \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_cheeseburger
+
 # RIL
 PRODUCT_PACKAGES += \
     librmnetctl \
