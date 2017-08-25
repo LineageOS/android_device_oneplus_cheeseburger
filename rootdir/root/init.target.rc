@@ -173,6 +173,9 @@ on boot
     chmod 0666 /dev/dash
     restorecon  /dev/dash
 
+    chmod 0664 /sys/class/power_supply/battery/fastchg_status
+    chown system system /sys/class/power_supply/battery/fastchg_status
+
     # RGB light
     chown system system /sys/class/leds/red/pause_lo
     chown system system /sys/class/leds/blue/pause_lo
