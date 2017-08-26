@@ -20,16 +20,7 @@
 <!-- Camera app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
-    <!-- This value may be tweaked to save memory on low RAM devices. The value
-         is the percentage of camera preview height/width to scale to. -->
-    <integer name="panorama_frame_size_reduction">100</integer>
-
-    <!-- A list of scenemodes where Longshot should be enabled. Comma separated.
-         An empty list will use the default restrictions. If defined, longshot
-         will be enabled ONLY for these scenemodes and disabled for others.
-         Here's a hack to disable longshot. -->
-    <string-array name="longshot_scenemodes">
-        <item>placeholder</item>
-    </string-array>
-
+    <!-- Number of supported cameras.
+         Helpful when a HAL reports more devices than it should. -->
+    <integer name="num_of_supported_cameras">2</integer>
 </resources>
