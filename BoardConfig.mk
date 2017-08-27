@@ -243,7 +243,7 @@ TARGET_RIL_VARIANT := caf
 PROTOBUF_SUPPORTED := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/lineage/sepolicy/qcom/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
 # Sensors
