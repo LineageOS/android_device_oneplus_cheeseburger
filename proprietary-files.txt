@@ -21,10 +21,6 @@ etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
 bin/mm-qcamera-daemon
-etc/camera/camera_config.xml
-etc/camera/imx350_chromatix.xml
-etc/camera/imx371_chromatix.xml
-etc/camera/imx398_chromatix.xml
 lib/hw/camera.msm8998.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
