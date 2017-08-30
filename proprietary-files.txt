@@ -356,3 +356,8 @@ etc/firmware/mbn_ota/mbn_ota.txt
 # Sensors
 etc/sensors/hals.conf
 etc/sensors/sensor_def_qcomdev.conf
+
+# Touchscreen Firmware
+etc/firmware/tp/fw_synaptics_15801.img
+etc/firmware/tp/fw_synaptics_15801b.img
+etc/firmware/tp/fw_synaptics_16859.img
