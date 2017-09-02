@@ -354,7 +354,7 @@ lib64/libparam.so
 etc/firmware/mbn_ota/mbn_ota.txt
 
 # Sensors
-etc/sensors/hals.conf
+vendor/etc/sensors/hals.conf
 etc/sensors/sensor_def_qcomdev.conf
 
 # Touchscreen Firmware
