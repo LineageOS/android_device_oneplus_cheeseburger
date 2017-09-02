@@ -104,6 +104,7 @@ media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
 persist.mm.enable.prefetch=true
 vidc.enc.dcvs.extra-buff-count=2
+persist.media.treble_omx=false
 
 # NFC
 ro.nfc.port=I2C
