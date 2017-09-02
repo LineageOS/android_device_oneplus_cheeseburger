@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e2c22e01_b83ddfee",
+        "filename": "rootdir/root/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 13559
+      },
+      "writtenOn": "2017-09-02T12:56:09Z",
+      "side": 1,
+      "message": "fwpath ?",
+      "range": {
+        "startLine": 344,
+        "startChar": 48,
+        "endLine": 344,
+        "endChar": 53
+      },
+      "revId": "ea7b19d04db64bf4829c0d2e7fa26396139e2daf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
