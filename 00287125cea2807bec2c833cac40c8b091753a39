@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e04a8abb_21673d11",
+        "filename": "config.fs",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 15525
+      },
+      "writtenOn": "2017-09-02T14:19:18Z",
+      "side": 1,
+      "message": "error: use of undeclared identifier \u0027CAP_CAP_NET_BIND_SERVICE\u0027\nI think we should remove that leading \u0027CAP_\u0027...",
+      "range": {
+        "startLine": 17,
+        "startChar": 6,
+        "endLine": 17,
+        "endChar": 10
+      },
+      "revId": "00287125cea2807bec2c833cac40c8b091753a39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
