@@ -22,6 +22,29 @@
       "revId": "00287125cea2807bec2c833cac40c8b091753a39",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bcdf6d5c_0f444114",
+        "filename": "manifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 15257
+      },
+      "writtenOn": "2017-09-03T18:18:13Z",
+      "side": 1,
+      "message": "Is there any difference between setting\n\u003cinstance\u003emsm8996\u003c/instance\u003e and \u003cinstance\u003edefault\u003c/instance\u003e? Is this related in any way to HAL lib names (eg. power.msm8996.so)?",
+      "range": {
+        "startLine": 91,
+        "startChar": 12,
+        "endLine": 91,
+        "endChar": 40
+      },
+      "revId": "00287125cea2807bec2c833cac40c8b091753a39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
