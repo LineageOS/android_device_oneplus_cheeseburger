@@ -21,7 +21,7 @@ etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
 bin/mm-qcamera-daemon
-etc/camera/camera_config.xml|c1336d6774d4b54c76f97d6e55e6734792d2dce4
+etc/camera/camera_config.xml|d601a753134ef75eb36df501b1706d5325f8ac6a
 etc/camera/imx350_chromatix.xml
 etc/camera/imx371_chromatix.xml
 etc/camera/imx398_chromatix.xml
@@ -356,3 +356,8 @@ etc/firmware/mbn_ota/mbn_ota.txt
 # Sensors
 etc/sensors/hals.conf
 etc/sensors/sensor_def_qcomdev.conf
+
+# Touchscreen Firmware
+etc/firmware/tp/fw_synaptics_15801.img
+etc/firmware/tp/fw_synaptics_15801b.img
+etc/firmware/tp/fw_synaptics_16859.img
