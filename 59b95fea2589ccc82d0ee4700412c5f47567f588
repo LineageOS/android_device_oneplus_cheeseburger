@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7120156c_3ce93a7c",
+        "filename": "overlay/packages/apps/Snap/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 15525
+      },
+      "writtenOn": "2017-09-12T07:55:09Z",
+      "side": 1,
+      "message": "The front camera won\u0027t freeze on my device. So I guess we don\u0027t need the front one.",
+      "revId": "59b95fea2589ccc82d0ee4700412c5f47567f588",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
