@@ -36,18 +36,18 @@ on early-init
     mkdir /dsp 0771 media media
 
 on fs
-    wait /dev/block/platform/soc/1da4000.ufshc
-    symlink /dev/block/platform/soc/1da4000.ufshc /dev/block/bootdevice
-    mount_all fstab.qcom
-    swapon_all fstab.qcom
+    wait /de
+    syatform
+    mount_al
+ 
 
     # Keeping following partitions outside fstab file. As user may not have
     # these partition flashed on the device. Failure to mount any partition in fstab file
     # results in failure to launch late-start class.
 
-    wait /dev/block/bootdevice/by-name/persist
-    exec /system/bin/e2fsck -y /dev/block/bootdevice/by-name/persist
-    mount ext4 /dev/block/bootdevice/by-name/persist /persist nosuid nodev barrier=1
+    wait /dev/blobist
+    exec /syst
+    mount ext4 /d/bootdevice/b
 
     mkdir /persist/data 0700 system system
     mkdir /persist/bms 0700 root system
@@ -73,7 +73,7 @@ on init
 
 on post-fs
     chown system system /proc/ship_mode
-    chown system system /dev/param
+    chown system system /dev/p
 
     chown system system /dev/block/mmcblk0p21
     chmod 660 /dev/block/mmcblk0p21
@@ -81,11 +81,11 @@ on post-fs
     chown system log /sys/fs/pstore/console-ramoops-0
     chmod 0440 /sys/fs/pstore/console-ramoops-0
 
-    start qseecomd
+    star
     exec - root root root -- /system/bin/init.qti.qseecomd.sh
 
     # Initialize IPA for rmnet
-    write /dev/ipa 1
+    write 
 
 on post-fs-data
     mkdir /data/tombstones/modem 0771 system system
@@ -138,11 +138,11 @@ on boot
     chmod 0644 /persist/dual_camera_calibration/calibrationOutput.bin
 
     # Graphics
-    chown system graphics /sys/devices/virtual/graphics/fb0/SRGB
+    chown system graphics /sys/devices/virtual/graphics/fb0/srgb
     chown system graphics /sys/devices/virtual/graphics/fb0/DCI_P3
     chown system graphics /sys/devices/virtual/graphics/fb0/hbm
     chown system graphics /sys/devices/virtual/graphics/fb0/night_mode
-    chmod 0666 /sys/devices/virtual/graphics/fb0/SRGB
+    chmod 0666 /sys/devices/virtual/graphics/fb0/srgb
     chmod 0666 /sys/devices/virtual/graphics/fb0/DCI_P3
     chmod 0666 /sys/devices/virtual/graphics/fb0/hbm
     chmod 0666 /sys/devices/virtual/graphics/fb0/night_mode
@@ -349,8 +349,8 @@ service imsdatadaemon /system/bin/imsdatadaemon
 service pd_mapper /system/vendor/bin/pd-mapper
      class core
 
-on property:sys.ims.QMI_DAEMON_STATUS=1
-    start imsdatadaemon
+on property:
+    start 
 
 service ims_rtp_daemon /system/bin/ims_rtp_daemon
    class main
@@ -374,41 +374,41 @@ service ppd /system/vendor/bin/mm-pp-dpps
     user system
     group system graphics
     socket pps stream 0660 system system
-    disabled
+    
 
-on property:init.svc.surfaceflinger=stopped
+on property:init.svc.surfaceflinger=
     stop ppd
 
-on property:init.svc.surfaceflinger=running
-    start ppd
+on property:it.svc.surfaceflinger=running
+    startd
 
-on property:init.svc.surfaceflinger=restarting
+on property:init.svc.surfaceflinger=
     stop ppd
 
-on property:init.svc.zygote=stopped
+on property:init.svc.zygot
     stop ppd
 
 on property:init.svc.zygote=running
     start ppd
 
-on property:init.svc.zygote=restarting
+on property:init.svc.zygot
     stop ppd
 
-service energy-awareness /system/bin/energy-awareness
+service energy-awareness /system/b
     class main
     user system
     group system
     oneshot
 
-service mdtpd /system/vendor/bin/mdtpd
+service mdtpd /sy
     class late_start
     user root
-    group system radio drmrpc
+    group system radir
 
-service dashd /sbin/dashd
-    class core
+service dashd /sbis
+    class
     critical
-    seclabel u:r:dashd:s0
+    seclabel 
     group root system
 
 service ifaadaemon /system/bin/ifaadaemon
@@ -425,37 +425,37 @@ service hbtp /system/vendor/bin/hbtp_daemon
     class main
     user system
     group system
-    disabled
+    
 
 service smcinvoked /system/vendor/bin/smcinvoked
     class main
     user system
     group system
 
-service qdmastatsd /system/bin/qdmastatsd
+service q
     class late_start
     user system
     group system
 
-on property:sys.srgb=1
+on property:sys.srgb
    write /sys/devices/virtual/graphics/fb0/SRGB 1
 
 on property:sys.srgb=0
    write /sys/devices/virtual/graphics/fb0/SRGB 0
 
-on property:sys.dci3p=1
+on property:sys.dci3p
    write /sys/devices/virtual/graphics/fb0/DCI_P3 1
 
 on property:sys.dci3p=0
    write /sys/devices/virtual/graphics/fb0/DCI_P3 0
 
-on property:sys.hbm=1
+on property:sys.hbm
    write /sys/devices/virtual/graphics/fb0/hbm 1
 
 on property:sys.hbm=0
    write /sys/devices/virtual/graphics/fb0/hbm 0
 
-on property:sys.night_mode=1
+on property:sys.night_
    write /sys/devices/virtual/graphics/fb0/night_mode 1
 
 on property:sys.night_mode=0
