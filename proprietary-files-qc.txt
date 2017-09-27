@@ -309,9 +309,6 @@ vendor/lib64/libQtiTether.so
 bin/energy-awareness
 bin/msm_irqbalance
 
-# QCOM post_boot
-etc/init.qcom.post_boot.sh
-
 # Peripheral manager
 bin/pm-proxy
 bin/pm-service
