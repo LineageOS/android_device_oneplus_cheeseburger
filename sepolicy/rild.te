@@ -1,2 +1,2 @@
-allow rild nv_data_file:dir { getattr search };
+allow rild nv_data_file:dir { rw_dir_perms };
 allow rild nv_data_file:file { rw_file_perms };
