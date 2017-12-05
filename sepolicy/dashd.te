@@ -36,7 +36,6 @@ allow dashd self:capability { sys_boot dac_override};
 allow dashd device:dir { open read write } ;
 #allow dashd device:chr_file { write read };
 
-allow dashd proc_stat:file { r_file_perms };
 allow dashd sysfs_batteryinfo:file { r_file_perms };
 
 r_dir_file(dashd, sysfs_usb_supply);

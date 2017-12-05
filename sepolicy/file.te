@@ -1,4 +1,3 @@
-type proc_stat, fs_type;
 type proc_touchpanel, fs_type;
 
 type nv_data_file, file_type;
