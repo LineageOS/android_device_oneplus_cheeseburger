@@ -1,1 +1,2 @@
-allow netmgrd net_data_file:file { write };
+allow netmgrd net_data_file:dir { rw_dir_perms };
+allow netmgrd net_data_file:file { create_file_perms rw_file_perms };
