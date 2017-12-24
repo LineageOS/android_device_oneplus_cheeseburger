@@ -2,38 +2,44 @@
 etc/firmware/tfa98xx.cnt
 
 # Audio ACDB
-etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-etc/acdbdata/MTP/MTP_General_cal.acdb
-etc/acdbdata/MTP/MTP_Global_cal.acdb
-etc/acdbdata/MTP/MTP_Handset_cal.acdb
-etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/MTP_Headset_cal.acdb
-etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
 bin/mm-qcamera-daemon
-etc/camera/camera_config.xml|d601a753134ef75eb36df501b1706d5325f8ac6a
-etc/camera/imx350_chromatix.xml
-etc/camera/imx371_chromatix.xml
-etc/camera/imx398_chromatix.xml
-lib/hw/camera.msm8998.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
 lib/libopposfr.so
-lib/libqomx_core.so
-lib/libVDBlurlessAPI.so
-lib/libVDHDRAPI.so
-vendor/lib/libarcsoft_dualcam_refocus.so
+lib/libfiltergenerator.so
+lib/libblurbuster.so
+lib/libtrueportrait.so
+lib64/libfiltergenerator.so
+lib64/libblurbuster.so
+lib64/libtrueportrait.so
+vendor/etc/camera/camera_config.xml
+vendor/etc/camera/imx350_chromatix.xml
+vendor/etc/camera/imx371_chromatix.xml
+vendor/etc/camera/imx376k_chromatix.xml
+vendor/etc/camera/imx398_chromatix.xml
+vendor/lib/hw/camera.msm8998.so
+vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmjpeg_interface.so
+vendor/lib/libqomx_core.so
+vendor/lib/libarcsoft_dualcam_refocus_right.so
+vendor/lib/libarcsoft_dualcam_refocus_left.so
+vendor/lib/libarcsoft_dualcam_refocus_preview.so
+vendor/lib/libarcsoft_dualcam_bokeh_api.so
 vendor/lib/libblurbuster.so
-vendor/lib/libcamera_bokeh_wrapper.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libchromaflash.so
 vendor/lib/libcvface_api.so
 vendor/lib/libdczoom.so
 vendor/lib/libdualcameraddm.so
-vendor/lib/libfiltergenerator.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libfusionLibrary.so
 vendor/lib/libjpegdhw.so
@@ -42,7 +48,6 @@ vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
-vendor/lib/libmmcamera_edgesmooth_lib.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
@@ -54,10 +59,11 @@ vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
-vendor/lib/libmmcamera_imglib_faceproc_adspstub2.so
 vendor/lib/libmmcamera_imx350.so
 vendor/lib/libmmcamera_imx350_gt24c64ass_eeprom.so
 vendor/lib/libmmcamera_imx371.so
+vendor/lib/libmmcamera_imx376k.so
+vendor/lib/libmmcamera_imx376k_gt24c64_eeprom.so
 vendor/lib/libmmcamera_imx398.so
 vendor/lib/libmmcamera_imx398_gt24c64_eeprom.so
 vendor/lib/libmmcamera_llvd.so
@@ -66,10 +72,7 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
-vendor/lib/libmmcamera_sac_lib.so
-vendor/lib/libmmcamera_sat_dummy_lib.so
 vendor/lib/libmmcamera_sony_imx371_eeprom.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
@@ -79,7 +82,6 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -105,49 +107,57 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libseemore.so
-vendor/lib/libst_disp.so
 vendor/lib/libStDualCam.so
-vendor/lib/libStereoblur.so
 vendor/lib/libSonyIMX350PdafLibrary.so
 vendor/lib/libSonyIMX371RmscLibrary.so
-vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libchromaflash.so
 vendor/lib64/liboptizoom.so
 vendor/lib64/libseemore.so
-vendor/lib64/libblurbuster.so
 
 # Camera actuators
 vendor/lib/libactuator_lc898217xc_imx350.so
 vendor/lib/libactuator_lc898217xc_imx398.so
 
 # Camera app modules
-vendor/lib/libjni_optizoom.so
-vendor/lib/libjni_trackingfocus.so
-vendor/lib/libjni_chromaflash.so
-vendor/lib/libjni_makeupV2.so
-vendor/lib/libjni_panorama.so
-vendor/lib/libjni_ubifocus.so
-vendor/lib/libjni_blurbuster.so
-vendor/lib/libjni_dualcamera.so
-vendor/lib/libjni_filtergenerator.so
-vendor/lib/libjni_stillmore.so
-vendor/lib/libjni_sharpshooter.so
-vendor/lib64/libjni_optizoom.so
-vendor/lib64/libjni_trackingfocus.so
-vendor/lib64/libjni_chromaflash.so
-vendor/lib64/libjni_makeupV2.so
-vendor/lib64/libjni_panorama.so
-vendor/lib64/libjni_ubifocus.so
-vendor/lib64/libjni_blurbuster.so
-vendor/lib64/libjni_stillmore.so
-vendor/lib64/libjni_clearsight.so
-vendor/lib64/libjni_sharpshooter.so
+lib/libjni_makeupV2.so
+lib/libjni_ubifocus.so
+lib/libjni_optizoom.so
+lib/libjni_sharpshooter.so
+lib/libjni_chromaflash.so
+lib/libjni_truescanner_v2.so
+lib/libjni_panorama.so
+lib/libjni_blurbuster.so
+lib/libjni_stillmore.so
+lib/libjni_dualcamera.so
+lib/libjni_filtergenerator.so
+lib/libjni_hazebuster.so
+lib/libjni_seestraight.so
+lib/libjni_trackingfocus.so
+lib/libjni_trueportrait.so
+lib64/libjni_makeupV2.so
+lib64/libjni_pacprocessor.so
+lib64/libjni_ubifocus.so
+lib64/libjni_clearsight.so
+lib64/libjni_optizoom.so
+lib64/libjni_sharpshooter.so
+lib64/libjni_chromaflash.so
+lib64/libjni_truescanner_v2.so
+lib64/libjni_panorama.so
+lib64/libjni_blurbuster.so
+lib64/libjni_stillmore.so
+lib64/libjni_dualcamera.so
+lib64/libjni_filtergenerator.so
+lib64/libjni_hazebuster.so
+lib64/libjni_seestraight.so
+lib64/libjni_trackingfocus.so
+lib64/libjni_trueportrait.so
+
 
 # Camera calibration
 etc/camera/cp/CPCalibrationData.bin
-etc/camera/cp/FusionCalibrationParams.bin
+etc/camera/cp/systemParams.bin
 etc/camera/cp/SystemParamsBokeh.bin
 etc/camera/cp/SystemParamsFusion.bin
 
@@ -239,9 +249,7 @@ etc/oneplus5_vstab_db_4k_video_0_30fps.config
 etc/oneplus5_vstab_db_720p_video_0_30fps.config
 etc/oneplus5_vstab_db_720p_video_1_30fps.config
 lib/lib_oneplus_facebeauty.so
-lib/lib_oneplus_md.so
 lib/lib_oneplus_watermark.so
-lib/libFNVfbEngineHAL.so
 lib/libmms_gyro_vstab_auth.so
 lib/libmms_gyro_vstab.so
 lib/libmms_hal_vstab.so
@@ -250,14 +258,15 @@ lib/libmorpho_image_stab4.so
 lib/libmorpho_video_refiner.so
 lib/libopcamera_crypt.so
 lib/libopcamera_native_modules.so
-lib/libopcamera.so
-lib/libopcameralib.so
 lib/libSensorManagerHAL.so
 
 # Camera / DSP - Hexagon libraries
-lib/rfsa/adsp/libVDHexagonBlurless_skel.so
+lib/rfsa/adsp/libdepthmap_skel.so
 lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
 lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so
+lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+lib/rfsa/adsp/libthread_blur_skel.so
+lib/rfsa/adsp/libVDHexagonBlurless_skel.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
@@ -319,9 +328,6 @@ vendor/lib/libmmcamera_isp_sub_module.so
 
 # Fingerprint sensor
 lib64/hw/fingerprint.msm8998.so
-lib64/lib_fpc_tac_shared.so
 
 # Touchscreen Firmware
-etc/firmware/tp/fw_synaptics_15801.img
-etc/firmware/tp/fw_synaptics_15801b.img
 etc/firmware/tp/fw_synaptics_16859.img
