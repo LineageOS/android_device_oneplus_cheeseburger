@@ -10,4 +10,10 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Fingerprint sensor
+etc/permissions/com.fingerprints.extension.xml
+-framework/com.fingerprints.extension.jar
+-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+lib/hw/fingerprint.msm8998.so
 lib64/hw/fingerprint.msm8998.so
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
