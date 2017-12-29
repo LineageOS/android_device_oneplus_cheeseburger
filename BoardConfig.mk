@@ -25,20 +25,20 @@
 # Inherit from oneplus msm8998-common
 -include device/oneplus/msm8998-common/BoardConfigCommon.mk
 
-PLATFORM_PATH := device/oneplus/cheeseburger
+DEVICE_PATH := device/oneplus/cheeseburger
 
 # Assertions
-TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := cheeseburger
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_PATH)/bluetooth/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Filesystem
-TARGET_FS_CONFIG_GEN += $(PLATFORM_PATH)/config.fs
+TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/config.fs
 
 # Lineage Hardware
-BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/lineagehw
+BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
 
 # inherit from the proprietary version
 -include vendor/oneplus/cheeseburger/BoardConfigVendor.mk
