@@ -1,4 +1,12 @@
 # Audio ACDB
+vendor/etc/acdbdata/EU/EU_Bluetooth_cal.acdb
+vendor/etc/acdbdata/EU/EU_General_cal.acdb
+vendor/etc/acdbdata/EU/EU_Global_cal.acdb
+vendor/etc/acdbdata/EU/EU_Handset_cal.acdb
+vendor/etc/acdbdata/EU/EU_Hdmi_cal.acdb
+vendor/etc/acdbdata/EU/EU_Headset_cal.acdb
+vendor/etc/acdbdata/EU/EU_Speaker_cal.acdb
+vendor/etc/acdbdata/EU/EU_workspaceFile.qwsp
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
@@ -17,3 +25,7 @@ lib/hw/fingerprint.msm8998.so
 lib64/hw/fingerprint.msm8998.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
+# Display calib
+vendor/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_samsung_s6e3fa6_1080p_cmd_mode_dsi_panel.xml
