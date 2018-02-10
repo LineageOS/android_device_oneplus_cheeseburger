@@ -3102,7 +3102,7 @@
     </path>
 
     <path name="mmap-playback speaker-and-hdmi">
-        <path name="mmap-playback hdmi" />
+        <path name="mmap-buffer-playback hdmi" />
         <path name="mmap-playback quat_i2s" />
     </path>
 
