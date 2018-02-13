@@ -1,0 +1,1 @@
+allow sysinit livedisplay_sysfs:file { r_file_perms };

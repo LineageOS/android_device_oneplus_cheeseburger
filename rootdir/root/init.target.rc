@@ -131,15 +131,18 @@ on boot
 
     # Graphics
     chown system graphics /sys/devices/virtual/graphics/fb0/srgb
-    chown system graphics /sys/devices/virtual/graphics/fb0/DCI_P3
+    chown system graphics /sys/devices/virtual/graphics/fb0/dci_p3
     chown system graphics /sys/devices/virtual/graphics/fb0/hbm
     chown system graphics /sys/devices/virtual/graphics/fb0/night_mode
-    chown system graphics /sys/class/graphics/fb0/dci_p3
     chmod 0666 /sys/devices/virtual/graphics/fb0/srgb
-    chmod 0666 /sys/devices/virtual/graphics/fb0/DCI_P3
+    chmod 0666 /sys/devices/virtual/graphics/fb0/dci_p3
     chmod 0666 /sys/devices/virtual/graphics/fb0/hbm
     chmod 0666 /sys/devices/virtual/graphics/fb0/night_mode
+
+    chown system graphics /sys/class/graphics/fb0/dci_p3
+    chown system graphics /sys/class/graphics/fb0/srgb
     chmod 0664 /sys/class/graphics/fb0/dci_p3
+    chmod 0664 /sys/class/graphics/fb0/srgb
 
     # Fingerprint
     chmod 0664 /sys/devices/soc/soc:fpc_fpc1020/irq
