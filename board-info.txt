@@ -1,2 +1,2 @@
-require version-modem=2018-11-25 23:43:16
-require version-firmware=ALPHA
+require version-modem=2018-12-05 23:33:22
+require version-firmware=OP5_O2_BETA_22
