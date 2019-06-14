@@ -1970,11 +1970,13 @@
     </path>
 
     <path name="voicemmode1-call usb-headphones">
+        <ctl name="VOC_EXT_EC MUX" value="None" />
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
     </path>
 
     <path name="voicemmode1-call usb-headset">
+        <ctl name="VOC_EXT_EC MUX" value="None" />
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="1" />
     </path>
@@ -2026,11 +2028,13 @@
     </path>
 
     <path name="voicemmode2-call usb-headphones">
+        <ctl name="VOC_EXT_EC MUX" value="None" />
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
     </path>
 
     <path name="voicemmode2-call usb-headset">
+        <ctl name="VOC_EXT_EC MUX" value="None" />
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="1" />
     </path>
