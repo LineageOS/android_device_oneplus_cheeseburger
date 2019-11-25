@@ -1,0 +1,2 @@
+# Touch
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.oneplus5        u:object_r:hal_touch_oneplus_msm8998_exec:s0
