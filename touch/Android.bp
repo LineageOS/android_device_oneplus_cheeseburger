@@ -13,8 +13,8 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.oneplus5",
-    init_rc: ["vendor.lineage.touch@1.0-service.oneplus5.rc"],
+    name: "vendor.lineage.touch@1.0-service.cheeseburger",
+    init_rc: ["vendor.lineage.touch@1.0-service.cheeseburger.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     vendor: true,

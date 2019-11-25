@@ -1,4 +1,0 @@
-service vendor.touch-hal-1-0-oneplus5 /vendor/bin/hw/vendor.lineage.touch@1.0-service.oneplus5
-    class hal
-    user system
-    group system

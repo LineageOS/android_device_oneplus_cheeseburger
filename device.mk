@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
 
 # Lineage hardware
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oneplus5
+    vendor.lineage.touch@1.0-service.cheeseburger
 
 # Inherit from oneplus msm8998-common
 $(call inherit-product, device/oneplus/msm8998-common/common.mk)
