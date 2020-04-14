@@ -17,6 +17,7 @@ vendor/lib/libchromatix_imx398_3a_wechat_preview.so
 vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so
 vendor/lib/libchromatix_imx398_preview_1080p_cpp.so
 vendor/lib/libmmcamera_imx398.so
+vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_sensor_modules.so
