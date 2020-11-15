@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5eac086d_7b5649cd",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-11-15T10:00:11Z",
+      "side": 1,
+      "message": "K comes before L",
+      "revId": "ab44ed38a279091930f1eb8ad6dc3babca898509",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
