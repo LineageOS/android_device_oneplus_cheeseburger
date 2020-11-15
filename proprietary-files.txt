@@ -27,7 +27,3 @@ vendor/lib/hw/camera.msm8998.so
 # Fingerprint sensor
 lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.msm8998.so
 lib64/hw/fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.msm8998.so
-
-# Display calib
-vendor/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_samsung_s6e3fa6_1080p_cmd_mode_dsi_panel.xml
