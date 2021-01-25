@@ -38,5 +38,3 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # inherit from the proprietary version
 -include vendor/oneplus/cheeseburger/BoardConfigVendor.mk
-
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml

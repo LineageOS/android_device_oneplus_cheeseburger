@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019,2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,12 +18,10 @@
 #include <android-base/logging.h>
 #include <android-base/strings.h>
 
-#include "KeyDisabler.h"
+#include "KeySwapper.h"
 
 namespace {
-constexpr const char kControlPath[] = "/proc/touchpanel/key_disable";
-constexpr const char kFpcPath[] =
-    "/sys/module/fpc1020_tee/parameters/ignor_home_for_ESD";
+constexpr const char kControlPath[] = "/proc/s1302/key_rep";
 };  // anonymous namespace
 
 namespace vendor {
@@ -32,11 +30,11 @@ namespace touch {
 namespace V1_0 {
 namespace implementation {
 
-KeyDisabler::KeyDisabler() : has_key_disabler_(!access(kControlPath, R_OK | W_OK)) {}
+KeySwapper::KeySwapper() : has_key_swapper_(!access(kControlPath, R_OK | W_OK)) {}
 
-// Methods from ::vendor::lineage::touch::V1_0::IKeyDisabler follow.
-Return<bool> KeyDisabler::isEnabled() {
-    if (!has_key_disabler_) return false;
+// Methods from ::vendor::lineage::touch::V1_0::IKeySwapper follow.
+Return<bool> KeySwapper::isEnabled() {
+    if (!has_key_swapper_) return false;
 
     std::string buf;
     if (!android::base::ReadFileToString(kControlPath, &buf)) {
@@ -44,24 +42,14 @@ Return<bool> KeyDisabler::isEnabled() {
         return false;
     }
 
-    if (!android::base::ReadFileToString(kFpcPath, &buf)) {
-        LOG(ERROR) << "Failed to read " << kFpcPath;
-        return false;
-    }
-
-    return std::stoi(android::base::Trim(buf)) == 0;
+    return std::stoi(android::base::Trim(buf)) == 1;
 }
 
-Return<bool> KeyDisabler::setEnabled(bool enabled) {
-    if (!has_key_disabler_) return false;
+Return<bool> KeySwapper::setEnabled(bool enabled) {
+    if (!has_key_swapper_) return false;
 
     if (!android::base::WriteStringToFile(std::to_string(enabled), kControlPath)) {
         LOG(ERROR) << "Failed to write " << kControlPath;
-        return false;
-    }
-
-    if (!android::base::WriteStringToFile((enabled ? "1" : "0"), kFpcPath)) {
-        LOG(ERROR) << "Failed to write " << kFpcPath;
         return false;
     }
 
@@ -73,4 +61,3 @@ Return<bool> KeyDisabler::setEnabled(bool enabled) {
 }  // namespace touch
 }  // namespace lineage
 }  // namespace vendor
-
