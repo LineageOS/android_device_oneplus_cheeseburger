@@ -22,6 +22,30 @@
       "revId": "a117bf93e4b9b7c348bd1740bd0e2e3561e88380",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d8a108b4_ffd743ef",
+        "filename": "touch/vendor.lineage.touch@1.0-service.cheeseburger.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-01-29T15:26:51Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "7b193039_7634c1c7",
+      "range": {
+        "startLine": 7,
+        "startChar": 18,
+        "endLine": 7,
+        "endChar": 37
+      },
+      "revId": "a117bf93e4b9b7c348bd1740bd0e2e3561e88380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
