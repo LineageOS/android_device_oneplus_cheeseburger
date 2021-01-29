@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7b193039_7634c1c7",
+        "filename": "touch/vendor.lineage.touch@1.0-service.cheeseburger.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-01-29T13:35:41Z",
+      "side": 0,
+      "message": "What happened to TouchscreeGesture iface?",
+      "range": {
+        "startLine": 7,
+        "startChar": 18,
+        "endLine": 7,
+        "endChar": 37
+      },
+      "revId": "a117bf93e4b9b7c348bd1740bd0e2e3561e88380",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
