@@ -10,19 +10,57 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
-vendor/etc/camera/imx398_chromatix.xml
-vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so
-vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so
-vendor/lib/libchromatix_imx398_3a_wechat_preview.so
-vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so
-vendor/lib/libchromatix_imx398_preview_1080p_cpp.so
-vendor/lib/libmmcamera_imx398.so
+vendor/lib/hw/camera.msm8998.so
+vendor/lib/libSonyIMX350PdafLibrary.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/hw/camera.msm8998.so
+vendor/lib/libmmcamera_imx350.so
+vendor/lib/libmmcamera_imx350_gt24c64ass_eeprom.so
+vendor/lib/libmmcamera_imx398.so
+
+# Camera actuators
+vendor/lib/libactuator_lc898217xc_imx350.so
+
+# Camera chromatix
+vendor/lib/libchromatix_imx350_3a_1536x866_30fps_video.so
+vendor/lib/libchromatix_imx350_3a_2304x1300_30fps_preview.so
+vendor/lib/libchromatix_imx350_3a_2304x1300_30fps_video.so
+vendor/lib/libchromatix_imx350_3a_2592x1940_24fps_preview_bokeh.so
+vendor/lib/libchromatix_imx350_3a_4160x3120_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx350_3a_4608x3456_27fps_preview.so
+vendor/lib/libchromatix_imx350_3a_5184x3880_30fps_preview.so
+vendor/lib/libchromatix_imx350_common.so
+vendor/lib/libchromatix_imx350_cpp_1536x866_30fps_video.so
+vendor/lib/libchromatix_imx350_cpp_2304x1300_30fps_video.so
+vendor/lib/libchromatix_imx350_cpp_4160x3120_30fps_preview_bokeh.so
+vendor/lib/libchromatix_imx350_cpp_4160x3120_30fps_snapshot_bokeh.so
+vendor/lib/libchromatix_imx350_cpp_4608x3456_27fps_preview.so
+vendor/lib/libchromatix_imx350_cpp_4608x3456_27fps_snapshot.so
+vendor/lib/libchromatix_imx350_cpp_5184x3880_30fps_preview.so
+vendor/lib/libchromatix_imx350_cpp_5184x3880_30fps_snapshot.so
+vendor/lib/libchromatix_imx350_isp_1536x866_30fps_video.so
+vendor/lib/libchromatix_imx350_isp_2304x1300_30fps_video.so
+vendor/lib/libchromatix_imx350_isp_4160x3120_30fps_snapshot_bokeh.so
+vendor/lib/libchromatix_imx350_isp_4608x3456_27fps_snapshot.so
+vendor/lib/libchromatix_imx350_isp_5184x3880_30fps_snapshot.so
+vendor/lib/libchromatix_imx350_postproc.so
+vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so
+vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so
+vendor/lib/libchromatix_imx398_3a_wechat_preview.so
+vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so
+vendor/lib/libchromatix_imx398_preview_1080p_cpp.so
+
+# Camera etc
+vendor/etc/camera/imx350_chromatix.xml
+vendor/etc/oneplus5_vstab_db_1080p_video_0_30fps.config
+vendor/etc/oneplus5_vstab_db_1080p_video_0_60fps.config
+vendor/etc/oneplus5_vstab_db_1080p_video_1_30fps.config
+vendor/etc/oneplus5_vstab_db_4k_video_0_30fps.config
+vendor/etc/oneplus5_vstab_db_720p_video_0_30fps.config
+vendor/etc/oneplus5_vstab_db_720p_video_1_30fps.config
 
 # Fingerprint sensor
 lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.msm8998.so
