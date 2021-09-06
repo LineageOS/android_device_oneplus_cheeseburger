@@ -22,6 +22,30 @@
       "revId": "b420769b1a767af8f6f4e474dfcf36b958bb4c77",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ac1bde8d_dd0e5fc6",
+        "filename": "overlay/packages/apps/Settings/res/values/dimens.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2021-09-06T08:15:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f827c7a_31f4f28b",
+      "range": {
+        "startLine": 20,
+        "startChar": 72,
+        "endLine": 20,
+        "endChar": 78
+      },
+      "revId": "b420769b1a767af8f6f4e474dfcf36b958bb4c77",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
