@@ -1,2 +1,6 @@
+# Keylayout
+/vendor/usr/keylayout/fpc1020.kl                                u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/synaptics_s3320.kl                        u:object_r:vendor_keylayout_file:s0
+
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.cheeseburger        u:object_r:hal_touch_oneplus_msm8998_exec:s0
