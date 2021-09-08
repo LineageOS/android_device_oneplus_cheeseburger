@@ -55,6 +55,7 @@ vendor/lib/libchromatix_imx398_preview_1080p_cpp.so
 
 # Camera etc
 vendor/etc/camera/imx350_chromatix.xml
+vendor/etc/camera/imx398_chromatix.xml
 vendor/etc/oneplus5_vstab_db_1080p_video_0_30fps.config
 vendor/etc/oneplus5_vstab_db_1080p_video_0_60fps.config
 vendor/etc/oneplus5_vstab_db_1080p_video_1_30fps.config
