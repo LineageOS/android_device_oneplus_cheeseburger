@@ -22,6 +22,7 @@ cc_binary {
     srcs: [
         "KeyDisabler.cpp",
         "KeySwapper.cpp",
+        "TouchscreenGesture.cpp",
         "service.cpp"
     ],
     shared_libs: [
