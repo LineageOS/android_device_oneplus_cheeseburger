@@ -32,6 +32,7 @@ cc_binary {
         "libutils",
         "vendor.lineage.touch@1.0",
     ],
+    local_include_dirs: ["include"],
     header_libs: [
         "vendor.lineage.touch@1.0-oneplus-headers",
     ],
