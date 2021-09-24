@@ -1,0 +1,4 @@
+soong_namespace {
+    imports: ["hardware/oneplus"],
+}
+
