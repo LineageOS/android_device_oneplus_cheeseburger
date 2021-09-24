@@ -20,6 +20,7 @@ cc_binary {
     relative_install_path: "hw",
     vendor: true,
     srcs: [
+        ":vendor.lineage.touch@1.0-oneplus-touchgesture",
         "KeyDisabler.cpp",
         "KeySwapper.cpp",
         "service.cpp"
@@ -30,5 +31,8 @@ cc_binary {
         "libhidlbase",
         "libutils",
         "vendor.lineage.touch@1.0",
+    ],
+    header_libs: [
+        "vendor.lineage.touch@1.0-oneplus-headers",
     ],
 }
