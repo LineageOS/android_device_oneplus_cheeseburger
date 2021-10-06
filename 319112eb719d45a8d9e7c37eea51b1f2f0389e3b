@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f3cf152_a95fd097",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-10-06T11:51:50Z",
+      "side": 1,
+      "message": "From stock 10.0.1?",
+      "range": {
+        "startLine": 7,
+        "startChar": 14,
+        "endLine": 7,
+        "endChar": 33
+      },
+      "revId": "319112eb719d45a8d9e7c37eea51b1f2f0389e3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
