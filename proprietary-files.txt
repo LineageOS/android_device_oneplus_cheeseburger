@@ -9,6 +9,9 @@ vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# Audio firmware
+vendor/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
+
 # Camera
 vendor/lib/hw/camera.msm8998.so
 vendor/lib/libSonyIMX350PdafLibrary.so
