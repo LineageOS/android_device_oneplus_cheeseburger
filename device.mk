@@ -53,5 +53,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.cheeseburger
 
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fingerprint=fpc \
+    vendor.boot.project_name=16859
+
 # Inherit from oneplus msm8998-common
 $(call inherit-product, device/oneplus/msm8998-common/common.mk)
