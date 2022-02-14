@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "97a3618b_25866ad1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-02-14T18:03:40Z",
+      "side": 1,
+      "message": "Also needs config_is_front_facing_fps",
+      "revId": "79d3868e912e83f85a611747cd2ff634e82b61b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1637a741_3708cb25",
