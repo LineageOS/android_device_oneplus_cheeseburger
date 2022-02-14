@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "72611654_572398e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-14T18:40:26Z",
+      "side": 1,
+      "message": "I would drop https://review.lineageos.org/c/LineageOS/android_device_oneplus_cheeseburger/+/324024/ and move to the new config in a new change.",
+      "parentUuid": "97a3618b_25866ad1",
+      "revId": "79d3868e912e83f85a611747cd2ff634e82b61b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1637a741_3708cb25",
