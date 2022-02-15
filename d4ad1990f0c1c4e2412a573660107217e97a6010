@@ -16,6 +16,24 @@
       "message": "Don\u0027t rename to lineage_config.xml. Doesn\u0027t make sense.",
       "revId": "d4ad1990f0c1c4e2412a573660107217e97a6010",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "29eb5914_fbe65517",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-02-15T15:09:45Z",
+      "side": 1,
+      "message": "Alright, should the copyright also be left as it was?",
+      "parentUuid": "25db4b73_565e3771",
+      "revId": "d4ad1990f0c1c4e2412a573660107217e97a6010",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
