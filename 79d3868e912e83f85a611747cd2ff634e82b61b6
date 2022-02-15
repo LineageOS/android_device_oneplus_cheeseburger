@@ -106,6 +106,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7120646_57f87fc4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-15T09:13:14Z",
+      "side": 1,
+      "message": "Because at first I was not sure what type of fps would be reported. Then I realized that I\u0027d need to \"force\" is as a power button fps (despite it is not).\n\nIn your case I still still it would make more sense to migrate to the new overlay in the same change, because that\u0027s in fact the new 1:1 replacement for front facing fps.",
+      "parentUuid": "8fe97be7_dddebe57",
+      "revId": "79d3868e912e83f85a611747cd2ff634e82b61b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1637a741_3708cb25",
