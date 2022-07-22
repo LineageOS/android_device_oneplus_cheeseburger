@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gf_input.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gf_input.kl \
     $(LOCAL_PATH)/keylayout/synaptics_s3320.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_s3320.kl
 
-# Lineage hardware
+# Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.cheeseburger
 
