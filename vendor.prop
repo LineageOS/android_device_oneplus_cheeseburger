@@ -1,5 +1,8 @@
 ro.hardware.fingerprint=fpc
 vendor.boot.project_name=16859
 
+# Bluetooth
+bluetooth.device.default_name=OnePlus 5
+
 # USB
 vendor.usb.product_string=OnePlus 5
