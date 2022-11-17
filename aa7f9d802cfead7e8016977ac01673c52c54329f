@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "472dd106_ca12c252",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-11-17T11:51:23Z",
+      "side": 1,
+      "message": "Why are you dong this? Per-device sepolicy is completely overkill.",
+      "revId": "aa7f9d802cfead7e8016977ac01673c52c54329f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
