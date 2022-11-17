@@ -1,0 +1,4 @@
+type sysfs_fpc, fs_type, sysfs_type;
+type sysfs_fpc_irq, fs_type, sysfs_type;
+type sysfs_fpc_key, fs_type, sysfs_type;
+type sysfs_fpc_screen, fs_type, sysfs_type;
