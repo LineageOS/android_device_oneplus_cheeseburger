@@ -16,6 +16,23 @@
       "message": "Why are you dong this? Per-device sepolicy is completely overkill.",
       "revId": "aa7f9d802cfead7e8016977ac01673c52c54329f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbf293ab_94eccc8d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-11-17T12:04:24Z",
+      "side": 1,
+      "message": "because cheeseburger has a different fingerprint sensor than dumpling. to each their own, keeping only common stuff in the common repo",
+      "revId": "aa7f9d802cfead7e8016977ac01673c52c54329f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
