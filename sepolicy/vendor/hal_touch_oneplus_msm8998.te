@@ -1,0 +1,2 @@
+allow hal_touch_oneplus_msm8998 sysfs_fpc_key:dir search;
+allow hal_touch_oneplus_msm8998 sysfs_fpc_key:file rw_file_perms;
