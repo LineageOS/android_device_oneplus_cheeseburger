@@ -16,6 +16,23 @@
       "message": "It\u0027s already checked with \n$(call inherit-product, vendor/oneplus/cheeseburger/cheeseburger-vendor.mk), isn\u0027t it?",
       "revId": "80ac519e2b55fc7a4ffd64506c4139dd3fd85ef3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92d63e02_2520f72c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-12-29T08:59:16Z",
+      "side": 1,
+      "message": "yes and no... it checks THAT makefile is there, but not BoardConfigVendor.mk\nmight be the commit message is a bit misleading, but i just picked it. it\u0027s still a good idea to enforce all makefiles we include imo",
+      "revId": "80ac519e2b55fc7a4ffd64506c4139dd3fd85ef3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
