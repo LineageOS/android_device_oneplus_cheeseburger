@@ -1,10 +1,10 @@
 # Fingerprint
 /dev/fpc1020                                                    u:object_r:fingerprint_device:s0
-/sys/devices/soc/soc:fpc_fpc1020/irq                            u:object_r:sysfs_fpc_irq:s0
-/sys/devices/soc/soc:fpc_fpc1020/proximity_state                u:object_r:sysfs_proximity:s0
-/sys/devices/soc/soc:fpc_fpc1020/report_home                    u:object_r:sysfs_fpc_key:s0
-/sys/devices/soc/soc:fpc_fpc1020/report_key                     u:object_r:sysfs_fpc_key:s0
-/sys/devices/soc/soc:fpc_fpc1020/screen_state                   u:object_r:sysfs_fpc_screen:s0
+/sys/devices/platform/soc/soc:fpc_fpc1020/irq                            u:object_r:sysfs_fpc_irq:s0
+/sys/devices/platform/soc/soc:fpc_fpc1020/proximity_state                u:object_r:sysfs_proximity:s0
+/sys/devices/platform/soc/soc:fpc_fpc1020/report_home                    u:object_r:sysfs_fpc_key:s0
+/sys/devices/platform/soc/soc:fpc_fpc1020/report_key                     u:object_r:sysfs_fpc_key:s0
+/sys/devices/platform/soc/soc:fpc_fpc1020/screen_state                   u:object_r:sysfs_fpc_screen:s0
 
 # Keydisabler
 /sys/module/fpc1020_tee/parameters/ignor_home_for_ESD           u:object_r:sysfs_fpc_key:s0
