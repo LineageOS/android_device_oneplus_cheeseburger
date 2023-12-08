@@ -6,7 +6,10 @@
 cc_binary {
     name: "vendor.lineage.touch@1.0-service.cheeseburger",
     init_rc: ["vendor.lineage.touch@1.0-service.cheeseburger.rc"],
-    defaults: ["hidl_defaults"],
+    defaults: [
+        "hidl_defaults",
+        "oneplus_lineage_touch_hal_defaults",
+    ],
     vintf_fragments: ["vendor.lineage.touch@1.0-service.cheeseburger.xml"],
     relative_install_path: "hw",
     vendor: true,
@@ -22,8 +25,5 @@ cc_binary {
         "libhidlbase",
         "libutils",
         "vendor.lineage.touch@1.0",
-    ],
-    header_libs: [
-        "vendor.lineage.touch@1.0-oneplus-headers",
     ],
 }
