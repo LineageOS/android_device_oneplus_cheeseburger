@@ -8,7 +8,7 @@
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
-#include <touch/oneplus/TouchscreenGesture.h>
+#include <TouchscreenGesture.h>
 
 #include "KeyDisabler.h"
 #include "KeySwapper.h"
