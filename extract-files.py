@@ -14,6 +14,8 @@ from extract_utils.fixups_blob import (
 )
 
 namespace_imports = [
+    'hardware/oneplus',
+    'hardware/qcom-caf/msm8998',
     'vendor/oneplus/msm8998-common',
 ]
 
@@ -26,7 +28,6 @@ module = ExtractUtilsModule(
     'cheeseburger',
     'oneplus',
     blob_fixups=blob_fixups,
-    check_elf=False,
     namespace_imports=namespace_imports,
     add_firmware_proprietary_file=True,
 )
