@@ -41,7 +41,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.cheeseburger
+    vendor.lineage.touch-service.cheeseburger
 
 # Wifi
 PRODUCT_PACKAGES += \

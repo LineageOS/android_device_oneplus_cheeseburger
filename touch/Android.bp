@@ -1,29 +1,32 @@
 //
-// Copyright (C) 2019,2021 The LineageOS Project
+// SPDX-FileCopyrightText: 2019-2025 The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.cheeseburger",
-    init_rc: ["vendor.lineage.touch@1.0-service.cheeseburger.rc"],
-    defaults: ["hidl_defaults"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.cheeseburger.xml"],
+    name: "vendor.lineage.touch-service.cheeseburger",
+    init_rc: ["vendor.lineage.touch-service.cheeseburger.rc"],
+    vintf_fragments: ["vendor.lineage.touch-service.cheeseburger.xml"],
     relative_install_path: "hw",
     vendor: true,
     srcs: [
-        ":vendor.lineage.touch@1.0-oneplus-touchgesture",
+        ":vendor.lineage.touch-oneplus-touchgesture",
         "KeyDisabler.cpp",
         "KeySwapper.cpp",
         "service.cpp"
     ],
     shared_libs: [
         "libbase",
-        "libbinder",
-        "libhidlbase",
+        "liblog",
+        "libbinder_ndk",
         "libutils",
-        "vendor.lineage.touch@1.0",
+        "vendor.lineage.touch-V1-ndk",
     ],
     header_libs: [
-        "vendor.lineage.touch@1.0-oneplus-headers",
+        "vendor.lineage.touch-oneplus-headers",
     ],
+    include_dirs: select(soong_config_variable("ONEPLUS_LINEAGE_TOUCH_HAL", "INCLUDE_DIR"), {
+        any @ flag_val: [flag_val],
+        default: [],
+    }),
 }

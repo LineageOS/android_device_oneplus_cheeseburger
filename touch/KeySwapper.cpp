@@ -1,6 +1,5 @@
 /*
- * Copyright (C) 2019,2021 The LineageOS Project
- *
+ * SPDX-FileCopyrightText: 2019-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -14,40 +13,44 @@ namespace {
 constexpr const char kControlPath[] = "/proc/s1302/key_rep";
 };  // anonymous namespace
 
+namespace aidl {
 namespace vendor {
 namespace lineage {
 namespace touch {
-namespace V1_0 {
-namespace implementation {
 
 KeySwapper::KeySwapper() : has_key_swapper_(!access(kControlPath, R_OK | W_OK)) {}
 
-// Methods from ::vendor::lineage::touch::V1_0::IKeySwapper follow.
-Return<bool> KeySwapper::isEnabled() {
-    if (!has_key_swapper_) return false;
+ndk::ScopedAStatus KeySwapper::getEnabled(bool* _aidl_return) {
+    if (!has_key_swapper_) {
+        *_aidl_return = false;
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+    }
 
     std::string buf;
     if (!android::base::ReadFileToString(kControlPath, &buf)) {
         LOG(ERROR) << "Failed to read " << kControlPath;
-        return false;
+        *_aidl_return = false;
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
 
-    return std::stoi(android::base::Trim(buf)) == 1;
+    *_aidl_return = std::stoi(android::base::Trim(buf)) == 1;
+    return ndk::ScopedAStatus::ok();
 }
 
-Return<bool> KeySwapper::setEnabled(bool enabled) {
-    if (!has_key_swapper_) return false;
+ndk::ScopedAStatus KeySwapper::setEnabled(bool enabled) {
+    if (!has_key_swapper_) {
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+    }
 
     if (!android::base::WriteStringToFile(std::to_string(enabled), kControlPath)) {
         LOG(ERROR) << "Failed to write " << kControlPath;
-        return false;
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
 
-    return true;
+    return ndk::ScopedAStatus::ok();
 }
 
-}  // namespace implementation
-}  // namespace V1_0
 }  // namespace touch
 }  // namespace lineage
 }  // namespace vendor
+}  // namespace aidl
