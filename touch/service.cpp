@@ -1,56 +1,48 @@
 /*
- * Copyright (C) 2019,2021 The LineageOS Project
- *
+ * SPDX-FileCopyrightText: 2019-2025 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.touch@1.0-service.cheeseburger"
+#define LOG_TAG "vendor.lineage.touch-service.cheeseburger"
 
 #include <android-base/logging.h>
-#include <hidl/HidlTransportSupport.h>
+#include <android/binder_manager.h>
+#include <android/binder_process.h>
 #include <TouchscreenGesture.h>
 
 #include "KeyDisabler.h"
 #include "KeySwapper.h"
 
-using android::OK;
-using android::sp;
-using android::hardware::configureRpcThreadpool;
-using android::hardware::joinRpcThreadpool;
-
-using ::vendor::lineage::touch::V1_0::IKeyDisabler;
-using ::vendor::lineage::touch::V1_0::IKeySwapper;
-using ::vendor::lineage::touch::V1_0::ITouchscreenGesture;
-using ::vendor::lineage::touch::V1_0::implementation::KeyDisabler;
-using ::vendor::lineage::touch::V1_0::implementation::KeySwapper;
-using ::vendor::lineage::touch::V1_0::implementation::TouchscreenGesture;
+using aidl::vendor::lineage::touch::KeyDisabler;
+using aidl::vendor::lineage::touch::KeySwapper;
+using aidl::vendor::lineage::touch::TouchscreenGesture;
 
 int main() {
-    sp<IKeyDisabler> key_disabler = new KeyDisabler();
-    sp<IKeySwapper> key_swapper = new KeySwapper();
-    sp<ITouchscreenGesture> gestureService = new TouchscreenGesture();
+    binder_status_t status = STATUS_OK;
 
-    configureRpcThreadpool(1, true /*callerWillJoin*/);
+    ABinderProcess_setThreadPoolMaxThreadCount(0);
 
-    if (key_disabler->registerAsService() != OK) {
-        LOG(ERROR) << "Cannot register keydisabler HAL service.";
-        return 1;
-    }
+    std::shared_ptr<KeyDisabler> keyDisabler = ndk::SharedRefBase::make<KeyDisabler>();
+    std::shared_ptr<KeySwapper> keySwapper = ndk::SharedRefBase::make<KeySwapper>();
+    std::shared_ptr<TouchscreenGesture> gestureService = ndk::SharedRefBase::make<TouchscreenGesture>();
 
-    if (key_swapper->registerAsService() != OK) {
-        LOG(ERROR) << "Cannot register keyswapper HAL service.";
-        return 1;
-    }
+    const std::string keyDisabler_instance = std::string(KeyDisabler::descriptor) + "/default";
+    status = AServiceManager_addService(keyDisabler->asBinder().get(), keyDisabler_instance.c_str());
+    CHECK_EQ(status, STATUS_OK) << "Failed to add service " << keyDisabler_instance << " " << status;
 
-    if (gestureService->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register touchscreen gesture HAL service.";
-        return 1;
-    }
+    const std::string keySwapper_instance = std::string(KeySwapper::descriptor) + "/default";
+    status = AServiceManager_addService(keySwapper->asBinder().get(), keySwapper_instance.c_str());
+    CHECK_EQ(status, STATUS_OK) << "Failed to add service " << keySwapper_instance << " " << status;
+
+    const std::string gesture_instance = std::string(TouchscreenGesture::descriptor) + "/default";
+    status = AServiceManager_addService(gestureService->asBinder().get(), gesture_instance.c_str());
+    CHECK_EQ(status, STATUS_OK) << "Failed to add service " << gesture_instance << " " << status;
 
     LOG(INFO) << "Touch HAL service is ready.";
-    joinRpcThreadpool();
-    // Should not pass this line
 
+    ABinderProcess_joinThreadPool();
+
+    // Should never reach here
     LOG(ERROR) << "Touchscreen HAL service failed to join thread pool.";
-    return 1;
+    return EXIT_FAILURE;
 }
