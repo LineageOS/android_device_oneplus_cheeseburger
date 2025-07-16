@@ -16,6 +16,29 @@
       "message": "```suggestion\n    ],\n    include_dirs: select(soong_config_variable(\"ONEPLUS_LINEAGE_TOUCH_HAL\", \"INCLUDE_DIR\"), {\n        any @ flag_val: [flag_val],\n        default: [],\n    }),\n```",
       "revId": "92620cab9c4d34216974a863a36914d753962ae8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14f4afff_13efe5e6",
+        "filename": "touch/KeyDisabler.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-16T19:23:50Z",
+      "side": 1,
+      "message": "```suggestion\n    *_aidl_return \u003d android::base::Trim(controlBuf) \u003d\u003d \"0\" \u0026\u0026 android::base::Trim(fpcBuf) \u003d\u003d \"0\";\n```",
+      "range": {
+        "startLine": 39,
+        "startChar": 13,
+        "endLine": 39,
+        "endChar": 14
+      },
+      "revId": "92620cab9c4d34216974a863a36914d753962ae8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
