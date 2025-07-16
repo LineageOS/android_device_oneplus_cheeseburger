@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f91e9fc6_33271dca",
+        "filename": "touch/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-16T19:20:05Z",
+      "side": 1,
+      "message": "```suggestion\n    ],\n    include_dirs: select(soong_config_variable(\"ONEPLUS_LINEAGE_TOUCH_HAL\", \"INCLUDE_DIR\"), {\n        any @ flag_val: [flag_val],\n        default: [],\n    }),\n```",
+      "revId": "92620cab9c4d34216974a863a36914d753962ae8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
